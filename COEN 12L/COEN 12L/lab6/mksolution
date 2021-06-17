@@ -1,0 +1,9 @@
+#!/bin/sh
+
+rm -rf solution
+mkdir solution
+
+cp -a Makefile unique.c set.h table.c solution
+
+tar cvf solution.tar ./solution
+rm -rf solution
