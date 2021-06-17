@@ -1,0 +1,2433 @@
+Archive member included to satisfy reference by file (symbol)
+
+library.a(initialize.o)       obj/Lab0Main.o (ClearDisplay)
+library.a(stm32f429i_discovery.o)
+                              library.a(initialize.o) (BSP_PB_Init)
+library.a(stm32f429i_discovery_lcd.o)
+                              library.a(initialize.o) (BSP_LCD_Init)
+library.a(stm32f429i_discovery_sdram.o)
+                              library.a(stm32f429i_discovery_lcd.o) (BSP_SDRAM_Init)
+library.a(stm32f4xx_hal.o)    library.a(initialize.o) (HAL_Init)
+library.a(stm32f4xx_hal_cortex.o)
+                              library.a(stm32f4xx_hal.o) (HAL_NVIC_SetPriorityGrouping)
+library.a(stm32f4xx_hal_dma.o)
+                              library.a(stm32f429i_discovery_sdram.o) (HAL_DMA_Init)
+library.a(stm32f4xx_hal_dma2d.o)
+                              library.a(stm32f429i_discovery_lcd.o) (HAL_DMA2D_Init)
+library.a(stm32f4xx_hal_gpio.o)
+                              library.a(stm32f429i_discovery.o) (HAL_GPIO_Init)
+library.a(stm32f4xx_hal_i2c.o)
+                              library.a(stm32f429i_discovery.o) (HAL_I2C_Init)
+library.a(stm32f4xx_hal_ltdc.o)
+                              library.a(stm32f429i_discovery_lcd.o) (HAL_LTDC_Init)
+library.a(stm32f4xx_hal_rcc.o)
+                              library.a(initialize.o) (HAL_RCC_OscConfig)
+library.a(stm32f4xx_hal_rcc_ex.o)
+                              library.a(stm32f429i_discovery_lcd.o) (HAL_RCCEx_PeriphCLKConfig)
+library.a(stm32f4xx_hal_sdram.o)
+                              library.a(stm32f429i_discovery_sdram.o) (HAL_SDRAM_Init)
+library.a(stm32f4xx_hal_spi.o)
+                              library.a(stm32f429i_discovery.o) (HAL_SPI_Init)
+library.a(stm32f4xx_it.o)     library.a(initialize.o) (IncludeThis)
+library.a(stm32f4xx_ll_fmc.o)
+                              library.a(stm32f4xx_hal_sdram.o) (FMC_SDRAM_Init)
+library.a(system_stm32f4xx.o)
+                              library.a(stm32f4xx_hal_rcc.o) (SystemCoreClock)
+library.a(touch.o)            obj/Lab0Main.o (TS_Init)
+library.a(startup_stm32f429xx.o)
+                              library.a(initialize.o) (Reset_Handler)
+library.a(ili9341.o)          library.a(stm32f429i_discovery_lcd.o) (ili9341_drv)
+library.a(stm32f429i_discovery_ts.o)
+                              library.a(touch.o) (BSP_TS_Init)
+library.a(stmpe811.o)         library.a(stm32f429i_discovery_ts.o) (stmpe811_ts_drv)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+                              library.a(initialize.o) (printf)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+                              obj/Lab0Main.o (strcat)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+                              obj/Lab0Main.o (strcpy)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strlen.o)
+                              obj/Lab0Main.o (strlen)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o) (_vfprintf_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__swsetup_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o) (__call_exitprocs)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o) (atexit)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (_dtoa_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (_fflush_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__sinit)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (_free_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o) (_fwalk)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (_localeconv_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__retarget_lock_init_recursive)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o) (__smakebuf_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (_malloc_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memchr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (memchr)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o) (memcpy)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o) (__malloc_lock)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o) (_Balloc)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (frexp)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o) (_sbrk_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o) (__sread)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (strncpy)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__sprint_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o) (_write_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o) (__register_exitproc)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o) (_calloc_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o) (_close_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o) (_fclose_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o) (_fputwc_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o) (_fstat_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o) (__sfvwrite_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o) (_isatty_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o) (__locale_mb_cur_max)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o) (_lseek_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o) (__ascii_mbtowc)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o) (memmove)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o) (_read_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o) (_realloc_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o) (errno)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o) (strcmp)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o) (__swbuf_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o) (_wcrtomb_r)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o) (__ascii_wctomb)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o) (_ctype_)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o) (_close)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o) (_fstat)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o) (_isatty)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o) (_lseek)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o) (_read)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o) (_sbrk)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o) (_exit)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_dsub)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_dmul)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_dcmpeq)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_dcmpun)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_d2iz)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o) (__aeabi_uldivmod)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                              y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+__lock___atexit_recursive_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___arc4random_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+errno               0x4               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+__lock___env_recursive_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___sinit_recursive_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___at_quick_exit_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___dd_hash_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+__lock___tz_mutex   0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+I2cHandle           0x3c              library.a(stm32f429i_discovery.o)
+LcdDrv              0x4               library.a(stm32f429i_discovery_lcd.o)
+__lock___sfp_recursive_mutex
+                    0x1               y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x00000000        0x0 obj/Lab0Main.o
+ .data          0x00000000        0x0 obj/Lab0Main.o
+ .bss           0x00000000        0x0 obj/Lab0Main.o
+ .data          0x00000000        0x0 obj/Lab0Calculator.o
+ .bss           0x00000000        0x0 obj/Lab0Calculator.o
+ .text          0x00000000        0x0 library.a(initialize.o)
+ .data          0x00000000        0x0 library.a(initialize.o)
+ .bss           0x00000000        0x0 library.a(initialize.o)
+ .text.TextRows
+                0x00000000       0x12 library.a(initialize.o)
+ .text._write   0x00000000      0x104 library.a(initialize.o)
+ .text.WaitForPushButton
+                0x00000000       0x18 library.a(initialize.o)
+ .text.PushButtonPressed
+                0x00000000       0x10 library.a(initialize.o)
+ .text.PrintBits
+                0x00000000       0x44 library.a(initialize.o)
+ .text.PrintByte
+                0x00000000       0x24 library.a(initialize.o)
+ .text.GetRandomNumber
+                0x00000000       0x18 library.a(initialize.o)
+ .text.CountCycles
+                0x00000000       0x38 library.a(initialize.o)
+ .text.CallReturnOverhead
+                0x00000000        0x2 library.a(initialize.o)
+ .data.dummy1   0x00000000        0x4 library.a(initialize.o)
+ .data.dummy2   0x00000000        0x4 library.a(initialize.o)
+ .rodata.PrintBits.str1.1
+                0x00000000        0x3 library.a(initialize.o)
+ .rodata._write.str1.1
+                0x00000000        0x1 library.a(initialize.o)
+ .text          0x00000000        0x0 library.a(stm32f429i_discovery.o)
+ .data          0x00000000        0x0 library.a(stm32f429i_discovery.o)
+ .bss           0x00000000        0x0 library.a(stm32f429i_discovery.o)
+ .text.SPIx_WriteRead
+                0x00000000       0x40 library.a(stm32f429i_discovery.o)
+ .text.BSP_GetVersion
+                0x00000000        0x8 library.a(stm32f429i_discovery.o)
+ .text.BSP_LED_Init
+                0x00000000       0x70 library.a(stm32f429i_discovery.o)
+ .text.BSP_LED_On
+                0x00000000       0x1c library.a(stm32f429i_discovery.o)
+ .text.BSP_LED_Off
+                0x00000000       0x1c library.a(stm32f429i_discovery.o)
+ .text.BSP_LED_Toggle
+                0x00000000       0x18 library.a(stm32f429i_discovery.o)
+ .text.BSP_PB_GetState
+                0x00000000       0x14 library.a(stm32f429i_discovery.o)
+ .text.IOE_WriteMultiple
+                0x00000000       0x30 library.a(stm32f429i_discovery.o)
+ .text.GYRO_IO_Init
+                0x00000000       0x74 library.a(stm32f429i_discovery.o)
+ .text.GYRO_IO_Write
+                0x00000000       0x44 library.a(stm32f429i_discovery.o)
+ .text.GYRO_IO_Read
+                0x00000000       0x48 library.a(stm32f429i_discovery.o)
+ .data.GPIO_PORT
+                0x00000000        0x8 library.a(stm32f429i_discovery.o)
+ .rodata.BUTTON_IRQn
+                0x00000000        0x1 library.a(stm32f429i_discovery.o)
+ .rodata.BUTTON_PIN
+                0x00000000        0x2 library.a(stm32f429i_discovery.o)
+ .rodata.GPIO_PIN
+                0x00000000        0x4 library.a(stm32f429i_discovery.o)
+ .text          0x00000000        0x0 library.a(stm32f429i_discovery_lcd.o)
+ .data          0x00000000        0x0 library.a(stm32f429i_discovery_lcd.o)
+ .bss           0x00000000        0x0 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_SetLayerVisible
+                0x00000000       0x28 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_SetTransparency
+                0x00000000        0xc library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_SetLayerAddress
+                0x00000000        0xc library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_SetLayerWindow
+                0x00000000       0x30 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_SetColorKeying
+                0x00000000       0x20 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_ResetColorKeying
+                0x00000000        0xc library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_GetTextColor
+                0x00000000       0x18 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_GetBackColor
+                0x00000000       0x18 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_GetFont
+                0x00000000       0x18 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_ReadPixel
+                0x00000000       0x74 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DrawBitmap
+                0x00000000       0xdc library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_ClearStringLine
+                0x00000000       0x54 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_FillEllipse
+                0x00000000       0xa8 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DisplayOff
+                0x00000000       0x10 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DisplayStringAtLine
+                0x00000000       0x30 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DrawLine
+                0x00000000       0xd0 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DrawPolygon
+                0x00000000       0x40 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_FillTriangle
+                0x00000000       0xd0 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_FillPolygon
+                0x00000000      0x100 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DrawCircle
+                0x00000000      0x138 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_FillCircle
+                0x00000000       0xaa library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_DrawEllipse
+                0x00000000      0x110 library.a(stm32f429i_discovery_lcd.o)
+ .data.Font8    0x00000000        0x8 library.a(stm32f429i_discovery_lcd.o)
+ .rodata.Font8_Table
+                0x00000000      0x2f8 library.a(stm32f429i_discovery_lcd.o)
+ .text          0x00000000        0x0 library.a(stm32f429i_discovery_sdram.o)
+ .data          0x00000000        0x0 library.a(stm32f429i_discovery_sdram.o)
+ .bss           0x00000000        0x0 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_ReadData
+                0x00000000       0x10 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_ReadData_DMA
+                0x00000000       0x10 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_WriteData
+                0x00000000       0x28 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_WriteData_DMA
+                0x00000000       0x10 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_Sendcmd
+                0x00000000       0x10 library.a(stm32f429i_discovery_sdram.o)
+ .text.BSP_SDRAM_DMA_IRQHandler
+                0x00000000        0xc library.a(stm32f429i_discovery_sdram.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal.o)
+ .text.HAL_MspDeInit
+                0x00000000        0x2 library.a(stm32f4xx_hal.o)
+ .text.HAL_DeInit
+                0x00000000       0x2c library.a(stm32f4xx_hal.o)
+ .text.HAL_SuspendTick
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_ResumeTick
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_GetHalVersion
+                0x00000000        0x8 library.a(stm32f4xx_hal.o)
+ .text.HAL_GetREVID
+                0x00000000        0xc library.a(stm32f4xx_hal.o)
+ .text.HAL_GetDEVID
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGSleepMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGSleepMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGStopMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGStopMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGStandbyMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGStandbyMode
+                0x00000000       0x10 library.a(stm32f4xx_hal.o)
+ .text.HAL_EnableCompensationCell
+                0x00000000       0x18 library.a(stm32f4xx_hal.o)
+ .text.HAL_DisableCompensationCell
+                0x00000000       0x1c library.a(stm32f4xx_hal.o)
+ .text.HAL_EnableMemorySwappingBank
+                0x00000000       0x1e library.a(stm32f4xx_hal.o)
+ .text.HAL_DisableMemorySwappingBank
+                0x00000000       0x1e library.a(stm32f4xx_hal.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_cortex.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_cortex.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_DisableIRQ
+                0x00000000       0x1c library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_SystemReset
+                0x00000000       0x20 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPriorityGrouping
+                0x00000000       0x10 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPriority
+                0x00000000       0x58 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_SetPendingIRQ
+                0x00000000       0x1c library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPendingIRQ
+                0x00000000       0x24 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_ClearPendingIRQ
+                0x00000000       0x1c library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_NVIC_GetActive
+                0x00000000       0x24 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_SYSTICK_CLKSourceConfig
+                0x00000000       0x18 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_SYSTICK_Callback
+                0x00000000        0x2 library.a(stm32f4xx_hal_cortex.o)
+ .text.HAL_SYSTICK_IRQHandler
+                0x00000000        0x8 library.a(stm32f4xx_hal_cortex.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_dma.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_dma.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_Start
+                0x00000000       0x58 library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_Start_IT
+                0x00000000       0x8a library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_Abort
+                0x00000000       0x4c library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_PollForTransfer
+                0x00000000     0x1944 library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_IRQHandler
+                0x00000000     0x1a10 library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_GetState
+                0x00000000        0x6 library.a(stm32f4xx_hal_dma.o)
+ .text.HAL_DMA_GetError
+                0x00000000        0x4 library.a(stm32f4xx_hal_dma.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_dma2d.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_dma2d.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_MspDeInit
+                0x00000000        0x2 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_DeInit
+                0x00000000       0x1c library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_Start_IT
+                0x00000000       0x5e library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_BlendingStart
+                0x00000000       0x4a library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_BlendingStart_IT
+                0x00000000       0x68 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_Abort
+                0x00000000       0x4c library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_Suspend
+                0x00000000       0x42 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_Resume
+                0x00000000       0x14 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_IRQHandler
+                0x00000000       0xac library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_ConfigCLUT
+                0x00000000       0x48 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_EnableCLUT
+                0x00000000       0x1a library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_DisableCLUT
+                0x00000000       0x1a library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_ProgramLineEvent
+                0x00000000       0x28 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_GetState
+                0x00000000        0x6 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_GetError
+                0x00000000        0x4 library.a(stm32f4xx_hal_dma2d.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_gpio.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_gpio.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_DeInit
+                0x00000000      0x148 library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_ReadPin
+                0x00000000        0xc library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_TogglePin
+                0x00000000        0x8 library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_LockPin
+                0x00000000       0x2a library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_EXTI_Callback
+                0x00000000        0x2 library.a(stm32f4xx_hal_gpio.o)
+ .text.HAL_GPIO_EXTI_IRQHandler
+                0x00000000       0x18 library.a(stm32f4xx_hal_gpio.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_i2c.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_i2c.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_MasterRequestWrite
+                0x00000000       0x74 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_MasterRequestRead
+                0x00000000       0xc0 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Transmit
+                0x00000000       0xe4 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Receive
+                0x00000000      0x1ac library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Transmit
+                0x00000000      0x11c library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Receive
+                0x00000000      0x104 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Transmit_IT
+                0x00000000       0x98 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Receive_IT
+                0x00000000       0xf4 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Transmit_IT
+                0x00000000       0x70 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Receive_IT
+                0x00000000       0x70 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Transmit_DMA
+                0x00000000       0xc0 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Master_Receive_DMA
+                0x00000000       0xd8 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Transmit_DMA
+                0x00000000       0xf8 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Slave_Receive_DMA
+                0x00000000       0xc4 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Mem_Write_IT
+                0x00000000       0xa0 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Mem_Read_IT
+                0x00000000      0x104 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Mem_Write_DMA
+                0x00000000       0xc4 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_Mem_Read_DMA
+                0x00000000       0xec library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_IsDeviceReady
+                0x00000000      0x138 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_MasterTxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_MasterRxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_SlaveTxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_SlaveRxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_MemTxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_MemRxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_EV_IRQHandler
+                0x00000000      0x224 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_ErrorCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMAError
+                0x00000000       0x26 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMAMasterTransmitCplt
+                0x00000000       0x50 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMAMasterReceiveCplt
+                0x00000000       0x46 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMASlaveTransmitCplt
+                0x00000000       0x54 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMASlaveReceiveCplt
+                0x00000000       0x60 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMAMemTransmitCplt
+                0x00000000       0x50 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_DMAMemReceiveCplt
+                0x00000000       0x46 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_ER_IRQHandler
+                0x00000000       0xd0 library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_GetError
+                0x00000000        0x4 library.a(stm32f4xx_hal_i2c.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_ltdc.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_ltdc.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_MspDeInit
+                0x00000000        0x2 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_DeInit
+                0x00000000       0x18 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_ErrorCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_LineEvenCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_IRQHandler
+                0x00000000       0xa0 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_ConfigColorKeying
+                0x00000000       0x40 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_ConfigCLUT
+                0x00000000       0x7c library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_EnableColorKeying
+                0x00000000       0x38 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_DisableColorKeying
+                0x00000000       0x38 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_EnableCLUT
+                0x00000000       0x38 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_DisableCLUT
+                0x00000000       0x38 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_DisableDither
+                0x00000000       0x34 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_SetWindowSize
+                0x00000000       0x50 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_SetWindowPosition
+                0x00000000       0x52 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_SetPixelFormat
+                0x00000000       0x40 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_SetAlpha
+                0x00000000       0x40 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_SetAddress
+                0x00000000       0x40 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_ProgramLineEvent
+                0x00000000       0x38 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_GetState
+                0x00000000        0x6 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_GetError
+                0x00000000        0x6 library.a(stm32f4xx_hal_ltdc.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_rcc.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_rcc.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_DeInit
+                0x00000000       0x4c library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_MCOConfig
+                0x00000000       0x90 library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_EnableCSS
+                0x00000000        0xc library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_DisableCSS
+                0x00000000        0xc library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_GetPCLK2Freq
+                0x00000000       0x30 library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_GetOscConfig
+                0x00000000       0xd8 library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_GetClockConfig
+                0x00000000       0x3c library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_CSSCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_rcc.o)
+ .text.HAL_RCC_NMI_IRQHandler
+                0x00000000       0x20 library.a(stm32f4xx_hal_rcc.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_rcc_ex.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_rcc_ex.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_rcc_ex.o)
+ .text.HAL_RCCEx_GetPeriphCLKConfig
+                0x00000000       0xfc library.a(stm32f4xx_hal_rcc_ex.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_sdram.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_sdram.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_DMA_XferErrorCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_DMA_XferCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_MspDeInit
+                0x00000000        0x2 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_DeInit
+                0x00000000       0x1c library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_RefreshErrorCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_IRQHandler
+                0x00000000       0x1c library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Read_8b
+                0x00000000       0x42 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Write_8b
+                0x00000000       0x42 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Read_16b
+                0x00000000       0x3e library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Write_16b
+                0x00000000       0x3e library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Read_32b
+                0x00000000       0x3e library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Write_32b
+                0x00000000       0x3e library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Read_DMA
+                0x00000000       0x48 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_Write_DMA
+                0x00000000       0x50 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_WriteProtection_Enable
+                0x00000000       0x26 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_WriteProtection_Disable
+                0x00000000       0x26 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_SetAutoRefreshNumber
+                0x00000000       0x24 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_GetModeStatus
+                0x00000000        0x8 library.a(stm32f4xx_hal_sdram.o)
+ .text.HAL_SDRAM_GetState
+                0x00000000        0x6 library.a(stm32f4xx_hal_sdram.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_hal_spi.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_hal_spi.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAEndTransmitReceive
+                0x00000000       0x9a library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_Transmit_IT
+                0x00000000       0xa4 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TransmitReceive_IT
+                0x00000000       0xb4 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_Receive_IT
+                0x00000000       0xb8 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_Transmit_DMA
+                0x00000000       0xbc library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TransmitReceive_DMA
+                0x00000000      0x118 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_Receive_DMA
+                0x00000000       0xdc library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_DMAPause
+                0x00000000       0x30 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_DMAResume
+                0x00000000       0x30 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_DMAStop
+                0x00000000       0x32 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_RxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TxRxCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TxHalfCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAHalfTransmitCplt
+                0x00000000        0xa library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_RxHalfCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAHalfReceiveCplt
+                0x00000000        0xa library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_TxRxHalfCpltCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAHalfTransmitReceiveCplt
+                0x00000000        0xa library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_ErrorCallback
+                0x00000000        0x2 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_TxISR
+                0x00000000       0xc8 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_RxCloseIRQHandler
+                0x00000000       0xd2 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_RxISR
+                0x00000000       0x42 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_2LinesRxISR
+                0x00000000       0x2a library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAError
+                0x00000000       0x1e library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMATransmitCplt
+                0x00000000       0x70 library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMAReceiveCplt
+                0x00000000       0xbe library.a(stm32f4xx_hal_spi.o)
+ .text.SPI_DMATransmitReceiveCplt
+                0x00000000       0x2a library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_IRQHandler
+                0x00000000       0xbe library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_GetError
+                0x00000000        0x4 library.a(stm32f4xx_hal_spi.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_it.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_it.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_it.o)
+ .text.IncludeThis
+                0x00000000        0x2 library.a(stm32f4xx_it.o)
+ .text          0x00000000        0x0 library.a(stm32f4xx_ll_fmc.o)
+ .data          0x00000000        0x0 library.a(stm32f4xx_ll_fmc.o)
+ .bss           0x00000000        0x0 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_Init
+                0x00000000       0x74 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_DeInit
+                0x00000000       0x32 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_Timing_Init
+                0x00000000       0x52 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_Extended_Timing_Init
+                0x00000000       0x48 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_WriteOperation_Enable
+                0x00000000       0x10 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NORSRAM_WriteOperation_Disable
+                0x00000000       0x10 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_Init
+                0x00000000       0x40 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_CommonSpace_Timing_Init
+                0x00000000       0x2a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_AttributeSpace_Timing_Init
+                0x00000000       0x2a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_DeInit
+                0x00000000       0x3a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_ECC_Enable
+                0x00000000       0x1a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_ECC_Disable
+                0x00000000       0x1a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_NAND_GetECC
+                0x00000000       0x4a library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_PCCARD_Init
+                0x00000000       0x26 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_PCCARD_CommonSpace_Timing_Init
+                0x00000000       0x1c library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_PCCARD_AttributeSpace_Timing_Init
+                0x00000000       0x1c library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_PCCARD_IOSpace_Timing_Init
+                0x00000000       0x1c library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_PCCARD_DeInit
+                0x00000000       0x1e library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_SDRAM_DeInit
+                0x00000000       0x1e library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_SDRAM_WriteProtection_Enable
+                0x00000000       0x10 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_SDRAM_WriteProtection_Disable
+                0x00000000       0x10 library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_SDRAM_SetAutoRefreshNumber
+                0x00000000        0xc library.a(stm32f4xx_ll_fmc.o)
+ .text.FMC_SDRAM_GetModeStatus
+                0x00000000        0xe library.a(stm32f4xx_ll_fmc.o)
+ .text          0x00000000        0x0 library.a(system_stm32f4xx.o)
+ .data          0x00000000        0x0 library.a(system_stm32f4xx.o)
+ .bss           0x00000000        0x0 library.a(system_stm32f4xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0x74 library.a(system_stm32f4xx.o)
+ .data.AHBPrescTable
+                0x00000000       0x10 library.a(system_stm32f4xx.o)
+ .text          0x00000000        0x0 library.a(touch.o)
+ .data          0x00000000        0x0 library.a(touch.o)
+ .bss           0x00000000        0x0 library.a(touch.o)
+ .data          0x00000000        0x0 library.a(startup_stm32f429xx.o)
+ .bss           0x00000000        0x0 library.a(startup_stm32f429xx.o)
+ .text          0x00000000        0x0 library.a(ili9341.o)
+ .data          0x00000000        0x0 library.a(ili9341.o)
+ .bss           0x00000000        0x0 library.a(ili9341.o)
+ .text.ili9341_WriteReg
+                0x00000000        0x4 library.a(ili9341.o)
+ .text.ili9341_WriteData
+                0x00000000        0x4 library.a(ili9341.o)
+ .text.ili9341_ReadData
+                0x00000000        0x4 library.a(ili9341.o)
+ .text          0x00000000        0x0 library.a(stm32f429i_discovery_ts.o)
+ .data          0x00000000        0x0 library.a(stm32f429i_discovery_ts.o)
+ .bss           0x00000000        0x0 library.a(stm32f429i_discovery_ts.o)
+ .text.BSP_TS_ITConfig
+                0x00000000       0x14 library.a(stm32f429i_discovery_ts.o)
+ .text.BSP_TS_ITGetStatus
+                0x00000000       0x10 library.a(stm32f429i_discovery_ts.o)
+ .text.BSP_TS_ITClear
+                0x00000000       0x10 library.a(stm32f429i_discovery_ts.o)
+ .text          0x00000000        0x0 library.a(stmpe811.o)
+ .data          0x00000000        0x0 library.a(stmpe811.o)
+ .bss           0x00000000        0x0 library.a(stmpe811.o)
+ .text.stmpe811_IO_WritePin
+                0x00000000       0x14 library.a(stmpe811.o)
+ .text.stmpe811_IO_ReadPin
+                0x00000000       0x12 library.a(stmpe811.o)
+ .text.stmpe811_IO_ITStatus
+                0x00000000       0x12 library.a(stmpe811.o)
+ .text.stmpe811_IO_EnableIT
+                0x00000000       0x1a library.a(stmpe811.o)
+ .text.stmpe811_IO_DisableIT
+                0x00000000       0x14 library.a(stmpe811.o)
+ .text.stmpe811_SetITPolarity
+                0x00000000       0x20 library.a(stmpe811.o)
+ .text.stmpe811_SetITType
+                0x00000000       0x20 library.a(stmpe811.o)
+ .text.stmpe811_GlobalITStatus
+                0x00000000       0x18 library.a(stmpe811.o)
+ .text.stmpe811_IO_ClearIT
+                0x00000000       0x3c library.a(stmpe811.o)
+ .text.stmpe811_IO_InitPin
+                0x00000000       0x2a library.a(stmpe811.o)
+ .text.stmpe811_IO_DisableAF
+                0x00000000       0x20 library.a(stmpe811.o)
+ .text.stmpe811_IO_Start
+                0x00000000       0x28 library.a(stmpe811.o)
+ .text.stmpe811_IO_SetEdgeMode
+                0x00000000       0x5a library.a(stmpe811.o)
+ .text.stmpe811_IO_EnablePinIT
+                0x00000000       0x20 library.a(stmpe811.o)
+ .text.stmpe811_IO_Config
+                0x00000000       0xbe library.a(stmpe811.o)
+ .text.stmpe811_IO_DisablePinIT
+                0x00000000       0x20 library.a(stmpe811.o)
+ .data.stmpe811_io_drv
+                0x00000000       0x2c library.a(stmpe811.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .text._printf_r
+                0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .text.printf   0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .debug_frame   0x00000000       0x74 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-printf.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .text._vfprintf_r
+                0x00000000     0x1b54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .text.vfprintf
+                0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .text.__sbprintf
+                0x00000000       0x84 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .rodata._vfprintf_r.str1.4
+                0x00000000       0x42 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .rodata.blanks.8687
+                0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .rodata.zeroes.8688
+                0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00000000       0x90 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfprintf.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .text.__swsetup_r
+                0x00000000       0xd0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wsetup.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .text.quorem   0x00000000      0x124 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x00000000      0xe54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .rodata._dtoa_r.str1.4
+                0x00000000       0x12 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .debug_frame   0x00000000       0x8c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-dtoa.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .text.__sflush_r
+                0x00000000      0x14c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .text._fflush_r
+                0x00000000       0x5c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .text.fflush   0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .debug_frame   0x00000000       0x5c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fflush.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.std      0x00000000       0x50 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sfmoreglue
+                0x00000000       0x30 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text._cleanup
+                0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sinit  0x00000000       0x54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sfp    0x00000000       0xa4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sfp_lock_release
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sinit_lock_acquire
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__sinit_lock_release
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .debug_frame   0x00000000      0x148 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-findfp.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .text._malloc_trim_r
+                0x00000000       0xa0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .text._free_r  0x00000000      0x1ec y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .debug_frame   0x00000000       0x80 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-freer.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .text._fwalk   0x00000000       0x4c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .text._fwalk_reent
+                0x00000000       0x54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .debug_frame   0x00000000       0x54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fwalk.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .text.__localeconv_l
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .text._localeconv_r
+                0x00000000        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .text.localeconv
+                0x00000000        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .debug_frame   0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-localeconv.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .text.__swhatbuf_r
+                0x00000000       0x5c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .text.__smakebuf_r
+                0x00000000       0x94 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .debug_frame   0x00000000       0x64 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-makebuf.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .text._malloc_r
+                0x00000000      0x570 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .bss.__malloc_max_sbrked_mem
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .bss.__malloc_max_total_mem
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .bss.__malloc_top_pad
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .data.__malloc_av_
+                0x00000000      0x408 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .data.__malloc_trim_threshold
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x00000000       0x4c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mallocr.o)
+ .text          0x00000000       0xa0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memchr.o)
+ .text          0x00000000      0x134 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .debug_frame   0x00000000       0x30 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text._Balloc  0x00000000       0x4c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text._Bfree   0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__multadd
+                0x00000000       0x8c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__s2b    0x00000000       0x98 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__hi0bits
+                0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__lo0bits
+                0x00000000       0x60 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__i2b    0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__multiply
+                0x00000000      0x130 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__pow5mult
+                0x00000000       0xa0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__lshift
+                0x00000000       0xb4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__mcmp   0x00000000       0x38 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__mdiff  0x00000000       0xf8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__ulp    0x00000000       0x50 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__b2d    0x00000000       0xb8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__d2b    0x00000000       0xc0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__ratio  0x00000000       0x60 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text._mprec_log10
+                0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__copybits
+                0x00000000       0x48 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text.__any_on
+                0x00000000       0x58 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .rodata.__mprec_bigtens
+                0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .rodata.__mprec_tens
+                0x00000000       0xc8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .rodata.__mprec_tinytens
+                0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .rodata.p05.7442
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .debug_frame   0x00000000      0x264 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mprec.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .text.frexp    0x00000000       0x6c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-s_frexp.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text.__sread  0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text.__swrite
+                0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text.__sseek  0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text.__sclose
+                0x00000000        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .debug_frame   0x00000000       0x8c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-stdio.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .text.strncpy  0x00000000       0x74 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .debug_frame   0x00000000       0x38 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strncpy.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text.__sprint_r.part.0
+                0x00000000       0x78 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text.__sprint_r
+                0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text._vfiprintf_r
+                0x00000000      0xda0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text.vfiprintf
+                0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text.__sbprintf
+                0x00000000       0x84 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .rodata._vfiprintf_r.str1.4
+                0x00000000       0x2f y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .rodata.blanks.8665
+                0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .rodata.zeroes.8666
+                0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00000000       0xd0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-vfiprintf.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .text._write_r
+                0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-writer.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .text._calloc_r
+                0x00000000       0x60 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .debug_frame   0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-callocr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .text._close_r
+                0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-closer.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .text._fclose_r
+                0x00000000       0xd0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .text.fclose   0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .debug_frame   0x00000000       0x3c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fclose.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .text.__fputwc
+                0x00000000       0xa0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .text._fputwc_r
+                0x00000000       0x64 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .text.fputwc   0x00000000       0x38 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .debug_frame   0x00000000       0x9c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fputwc.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .text._fstat_r
+                0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fstatr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x00000000      0x308 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .debug_frame   0x00000000       0x64 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fvwrite.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .text._isatty_r
+                0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-isattyr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .text._setlocale_r
+                0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .text.__locale_mb_cur_max
+                0x00000000        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .text.setlocale
+                0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .bss._PathLocale
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .data.__global_locale
+                0x00000000      0x16c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .rodata._setlocale_r.str1.4
+                0x00000000        0xd y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .rodata.str1.4
+                0x00000000        0x2 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .debug_frame   0x00000000       0x54 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-locale.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .text._lseek_r
+                0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lseekr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .text._mbtowc_r
+                0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .text.__ascii_mbtowc
+                0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00000000       0x4c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-mbtowc_r.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0xd0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .debug_frame   0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .text._read_r  0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-readr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .text._realloc_r
+                0x00000000      0x36c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .debug_frame   0x00000000       0x48 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reallocr.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0x88 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .debug_frame   0x00000000       0x60 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ COMMON         0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-reent.o)
+ .text          0x00000000      0x2dc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00000000       0x68 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcmp.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .text.__swbuf_r
+                0x00000000       0xb0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .text.__swbuf  0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .debug_frame   0x00000000       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wbuf.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .text._wcrtomb_r
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .text.wcrtomb  0x00000000       0x48 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00000000       0x64 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wcrtomb.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .text._wctomb_r
+                0x00000000       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .text.__ascii_wctomb
+                0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00000000       0x3c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-wctomb_r.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+ .rodata._ctype_
+                0x00000000      0x101 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000000       0x32 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-ctype_.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .stab          0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .text._close   0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .stab          0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+                                 0x24 (size before relaxing)
+ .text._fstat   0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(fstat.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .stab          0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+                                 0x24 (size before relaxing)
+ .text._isatty  0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(isatty.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .stab          0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+                                 0x24 (size before relaxing)
+ .text._lseek   0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(lseek.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .stab          0x00000000       0x18 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+                                 0x24 (size before relaxing)
+ .text._read    0x00000000       0x10 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(read.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .text._sbrk    0x00000000       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .bss.heap_end.5501
+                0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .text          0x00000000      0x378 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000       0xac y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000      0x424 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00000000       0x50 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .text          0x00000000      0x110 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000       0xc4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .text          0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00000000       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .text          0x00000000       0x50 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00000000       0x24 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .text          0x00000000       0x30 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .text          0x00000000      0x2d0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00000000        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000000       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .text          0x00000000        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x00000000        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x08000000         0x00200000         xr
+RAM              0x20000000         0x00030000         xrw
+CCM              0x10000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD obj/Lab0Main.o
+LOAD obj/Lab0Calculator.o
+LOAD library.a
+LOAD library.a
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+START GROUP
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+END GROUP
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+
+.text           0x08000000     0x9068
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x1ac library.a(startup_stm32f429xx.o)
+                0x08000000                __isr_vector
+ *(.text*)
+ .text          0x080001ac       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x080001ec       0x74 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x080001ec                _start
+                0x080001ec                _mainCRTStartup
+ .text.Null     0x08000260        0xc obj/Lab0Main.o
+ .text.BtnDigit
+                0x0800026c       0x2c obj/Lab0Main.o
+ .text.BtnBackSpace
+                0x08000298       0x1c obj/Lab0Main.o
+ .text.BtnEquals
+                0x080002b4       0x38 obj/Lab0Main.o
+ .text.Num2Text
+                0x080002ec      0x2c8 obj/Lab0Main.o
+ .text.BtnDIV   0x080005b4       0x64 obj/Lab0Main.o
+ .text.DrawButton
+                0x08000618       0xac obj/Lab0Main.o
+ .text.UpdateDisplay
+                0x080006c4      0x148 obj/Lab0Main.o
+ .text.DrawButton.constprop.1
+                0x0800080c       0x94 obj/Lab0Main.o
+ .text.BtnRadix
+                0x080008a0       0x34 obj/Lab0Main.o
+ .text.BtnADD   0x080008d4       0x64 obj/Lab0Main.o
+ .text.BtnSUB   0x08000938       0x64 obj/Lab0Main.o
+ .text.BtnMUL   0x0800099c       0x64 obj/Lab0Main.o
+ .text.startup.main
+                0x08000a00      0x1ec obj/Lab0Main.o
+                0x08000a00                main
+ .text          0x08000bec       0x1c obj/Lab0Calculator.o
+                0x08000bec                Addition
+                0x08000bf0                Subtraction
+                0x08000bf8                Multiplication
+                0x08000c00                Division
+ .text.ClearDisplay
+                0x08000c08       0x34 library.a(initialize.o)
+                0x08000c08                ClearDisplay
+ .text.DisplayHeader
+                0x08000c3c       0x80 library.a(initialize.o)
+                0x08000c3c                DisplayHeader
+ .text.DisplayFooter
+                0x08000cbc       0x58 library.a(initialize.o)
+                0x08000cbc                DisplayFooter
+ .text.InitializeHardware
+                0x08000d14      0x110 library.a(initialize.o)
+                0x08000d14                InitializeHardware
+ .text.GetClockCycleCount
+                0x08000e24        0xc library.a(initialize.o)
+                0x08000e24                GetClockCycleCount
+ .text.SPIx_Init
+                0x08000e30       0x94 library.a(stm32f429i_discovery.o)
+ .text.I2Cx_Init
+                0x08000ec4       0xe0 library.a(stm32f429i_discovery.o)
+ .text.I2Cx_Error
+                0x08000fa4       0x14 library.a(stm32f429i_discovery.o)
+ .text.SPIx_Write
+                0x08000fb8       0x30 library.a(stm32f429i_discovery.o)
+ .text.BSP_PB_Init
+                0x08000fe8       0x70 library.a(stm32f429i_discovery.o)
+                0x08000fe8                BSP_PB_Init
+ .text.LCD_IO_Init
+                0x08001058       0xb0 library.a(stm32f429i_discovery.o)
+                0x08001058                LCD_IO_Init
+ .text.LCD_IO_WriteData
+                0x08001108       0x38 library.a(stm32f429i_discovery.o)
+                0x08001108                LCD_IO_WriteData
+ .text.LCD_IO_WriteReg
+                0x08001140       0x38 library.a(stm32f429i_discovery.o)
+                0x08001140                LCD_IO_WriteReg
+ .text.LCD_IO_ReadData
+                0x08001178       0x6c library.a(stm32f429i_discovery.o)
+                0x08001178                LCD_IO_ReadData
+ .text.LCD_Delay
+                0x080011e4        0x4 library.a(stm32f429i_discovery.o)
+                0x080011e4                LCD_Delay
+ .text.IOE_Init
+                0x080011e8        0x4 library.a(stm32f429i_discovery.o)
+                0x080011e8                IOE_Init
+ .text.IOE_ITConfig
+                0x080011ec       0x54 library.a(stm32f429i_discovery.o)
+                0x080011ec                IOE_ITConfig
+ .text.IOE_Write
+                0x08001240       0x34 library.a(stm32f429i_discovery.o)
+                0x08001240                IOE_Write
+ .text.IOE_Read
+                0x08001274       0x38 library.a(stm32f429i_discovery.o)
+                0x08001274                IOE_Read
+ .text.IOE_ReadMultiple
+                0x080012ac       0x2c library.a(stm32f429i_discovery.o)
+                0x080012ac                IOE_ReadMultiple
+ .text.IOE_Delay
+                0x080012d8        0x4 library.a(stm32f429i_discovery.o)
+                0x080012d8                IOE_Delay
+ .text.FillBuffer
+                0x080012dc       0x64 library.a(stm32f429i_discovery_lcd.o)
+ .text.BSP_LCD_Init
+                0x08001340      0x1cc library.a(stm32f429i_discovery_lcd.o)
+                0x08001340                BSP_LCD_Init
+ .text.BSP_LCD_GetXSize
+                0x0800150c       0x10 library.a(stm32f429i_discovery_lcd.o)
+                0x0800150c                BSP_LCD_GetXSize
+ .text.BSP_LCD_GetYSize
+                0x0800151c       0x10 library.a(stm32f429i_discovery_lcd.o)
+                0x0800151c                BSP_LCD_GetYSize
+ .text.BSP_LCD_LayerDefaultInit
+                0x0800152c       0x7c library.a(stm32f429i_discovery_lcd.o)
+                0x0800152c                BSP_LCD_LayerDefaultInit
+ .text.BSP_LCD_SelectLayer
+                0x080015a8        0xc library.a(stm32f429i_discovery_lcd.o)
+                0x080015a8                BSP_LCD_SelectLayer
+ .text.BSP_LCD_SetTextColor
+                0x080015b4       0x18 library.a(stm32f429i_discovery_lcd.o)
+                0x080015b4                BSP_LCD_SetTextColor
+ .text.BSP_LCD_SetBackColor
+                0x080015cc       0x18 library.a(stm32f429i_discovery_lcd.o)
+                0x080015cc                BSP_LCD_SetBackColor
+ .text.BSP_LCD_SetFont
+                0x080015e4       0x18 library.a(stm32f429i_discovery_lcd.o)
+                0x080015e4                BSP_LCD_SetFont
+ .text.BSP_LCD_Clear
+                0x080015fc       0x3c library.a(stm32f429i_discovery_lcd.o)
+                0x080015fc                BSP_LCD_Clear
+ .text.BSP_LCD_DrawHLine
+                0x08001638       0x50 library.a(stm32f429i_discovery_lcd.o)
+                0x08001638                BSP_LCD_DrawHLine
+ .text.BSP_LCD_DrawVLine
+                0x08001688       0x58 library.a(stm32f429i_discovery_lcd.o)
+                0x08001688                BSP_LCD_DrawVLine
+ .text.BSP_LCD_DrawRect
+                0x080016e0       0x34 library.a(stm32f429i_discovery_lcd.o)
+                0x080016e0                BSP_LCD_DrawRect
+ .text.BSP_LCD_FillRect
+                0x08001714       0x5c library.a(stm32f429i_discovery_lcd.o)
+                0x08001714                BSP_LCD_FillRect
+ .text.BSP_LCD_DisplayOn
+                0x08001770       0x10 library.a(stm32f429i_discovery_lcd.o)
+                0x08001770                BSP_LCD_DisplayOn
+ .text.BSP_LCD_DrawPixel
+                0x08001780       0x2c library.a(stm32f429i_discovery_lcd.o)
+                0x08001780                BSP_LCD_DrawPixel
+ .text.BSP_LCD_DisplayChar
+                0x080017ac       0xd0 library.a(stm32f429i_discovery_lcd.o)
+                0x080017ac                BSP_LCD_DisplayChar
+ .text.BSP_LCD_DisplayStringAt
+                0x0800187c       0xb8 library.a(stm32f429i_discovery_lcd.o)
+                0x0800187c                BSP_LCD_DisplayStringAt
+ .text.BSP_SDRAM_Initialization_sequence
+                0x08001934       0x94 library.a(stm32f429i_discovery_sdram.o)
+                0x08001934                BSP_SDRAM_Initialization_sequence
+ .text.BSP_SDRAM_Init
+                0x080019c8      0x1d4 library.a(stm32f429i_discovery_sdram.o)
+                0x080019c8                BSP_SDRAM_Init
+ .text.HAL_MspInit
+                0x08001b9c        0x2 library.a(stm32f4xx_hal.o)
+                0x08001b9c                HAL_MspInit
+ .text.HAL_InitTick
+                0x08001b9e       0x24 library.a(stm32f4xx_hal.o)
+                0x08001b9e                HAL_InitTick
+ *fill*         0x08001bc2        0x2 
+ .text.HAL_Init
+                0x08001bc4       0x34 library.a(stm32f4xx_hal.o)
+                0x08001bc4                HAL_Init
+ .text.HAL_IncTick
+                0x08001bf8       0x10 library.a(stm32f4xx_hal.o)
+                0x08001bf8                HAL_IncTick
+ .text.HAL_GetTick
+                0x08001c08        0xc library.a(stm32f4xx_hal.o)
+                0x08001c08                HAL_GetTick
+ .text.HAL_Delay
+                0x08001c14       0x1a library.a(stm32f4xx_hal.o)
+                0x08001c14                HAL_Delay
+ *fill*         0x08001c2e        0x2 
+ .text.HAL_NVIC_SetPriorityGrouping
+                0x08001c30       0x24 library.a(stm32f4xx_hal_cortex.o)
+                0x08001c30                HAL_NVIC_SetPriorityGrouping
+ .text.HAL_NVIC_SetPriority
+                0x08001c54       0x68 library.a(stm32f4xx_hal_cortex.o)
+                0x08001c54                HAL_NVIC_SetPriority
+ .text.HAL_NVIC_EnableIRQ
+                0x08001cbc       0x18 library.a(stm32f4xx_hal_cortex.o)
+                0x08001cbc                HAL_NVIC_EnableIRQ
+ .text.HAL_SYSTICK_Config
+                0x08001cd4       0x2c library.a(stm32f4xx_hal_cortex.o)
+                0x08001cd4                HAL_SYSTICK_Config
+ .text.HAL_DMA_Init
+                0x08001d00       0x78 library.a(stm32f4xx_hal_dma.o)
+                0x08001d00                HAL_DMA_Init
+ .text.HAL_DMA_DeInit
+                0x08001d78      0xac4 library.a(stm32f4xx_hal_dma.o)
+                0x08001d78                HAL_DMA_DeInit
+ .text.DMA2D_SetConfig
+                0x0800283c       0x80 library.a(stm32f4xx_hal_dma2d.o)
+ .text.HAL_DMA2D_MspInit
+                0x080028bc        0x2 library.a(stm32f4xx_hal_dma2d.o)
+                0x080028bc                HAL_DMA2D_MspInit
+ .text.HAL_DMA2D_Init
+                0x080028be       0x5c library.a(stm32f4xx_hal_dma2d.o)
+                0x080028be                HAL_DMA2D_Init
+ .text.HAL_DMA2D_Start
+                0x0800291a       0x40 library.a(stm32f4xx_hal_dma2d.o)
+                0x0800291a                HAL_DMA2D_Start
+ .text.HAL_DMA2D_PollForTransfer
+                0x0800295a       0xc2 library.a(stm32f4xx_hal_dma2d.o)
+                0x0800295a                HAL_DMA2D_PollForTransfer
+ .text.HAL_DMA2D_ConfigLayer
+                0x08002a1c       0xe8 library.a(stm32f4xx_hal_dma2d.o)
+                0x08002a1c                HAL_DMA2D_ConfigLayer
+ .text.HAL_GPIO_Init
+                0x08002b04      0x1d8 library.a(stm32f4xx_hal_gpio.o)
+                0x08002b04                HAL_GPIO_Init
+ .text.HAL_GPIO_WritePin
+                0x08002cdc        0xa library.a(stm32f4xx_hal_gpio.o)
+                0x08002cdc                HAL_GPIO_WritePin
+ .text.I2C_WaitOnMasterAddressFlagUntilTimeout
+                0x08002ce6       0x64 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_WaitOnFlagUntilTimeout
+                0x08002d4a       0x8e library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_RequestMemoryWrite
+                0x08002dd8       0x90 library.a(stm32f4xx_hal_i2c.o)
+ .text.I2C_RequestMemoryRead
+                0x08002e68       0xdc library.a(stm32f4xx_hal_i2c.o)
+ .text.HAL_I2C_MspInit
+                0x08002f44        0x2 library.a(stm32f4xx_hal_i2c.o)
+                0x08002f44                HAL_I2C_MspInit
+ *fill*         0x08002f46        0x2 
+ .text.HAL_I2C_Init
+                0x08002f48       0xe8 library.a(stm32f4xx_hal_i2c.o)
+                0x08002f48                HAL_I2C_Init
+ .text.HAL_I2C_MspDeInit
+                0x08003030        0x2 library.a(stm32f4xx_hal_i2c.o)
+                0x08003030                HAL_I2C_MspDeInit
+ .text.HAL_I2C_DeInit
+                0x08003032       0x2c library.a(stm32f4xx_hal_i2c.o)
+                0x08003032                HAL_I2C_DeInit
+ *fill*         0x0800305e        0x2 
+ .text.HAL_I2C_Mem_Write
+                0x08003060       0xe4 library.a(stm32f4xx_hal_i2c.o)
+                0x08003060                HAL_I2C_Mem_Write
+ .text.HAL_I2C_Mem_Read
+                0x08003144      0x1b4 library.a(stm32f4xx_hal_i2c.o)
+                0x08003144                HAL_I2C_Mem_Read
+ .text.HAL_I2C_GetState
+                0x080032f8        0x6 library.a(stm32f4xx_hal_i2c.o)
+                0x080032f8                HAL_I2C_GetState
+ .text.LTDC_SetConfig
+                0x080032fe      0x148 library.a(stm32f4xx_hal_ltdc.o)
+ .text.HAL_LTDC_MspInit
+                0x08003446        0x2 library.a(stm32f4xx_hal_ltdc.o)
+                0x08003446                HAL_LTDC_MspInit
+ .text.HAL_LTDC_Init
+                0x08003448       0xfc library.a(stm32f4xx_hal_ltdc.o)
+                0x08003448                HAL_LTDC_Init
+ .text.HAL_LTDC_ConfigLayer
+                0x08003544       0x52 library.a(stm32f4xx_hal_ltdc.o)
+                0x08003544                HAL_LTDC_ConfigLayer
+ *fill*         0x08003596        0x2 
+ .text.HAL_LTDC_EnableDither
+                0x08003598       0x34 library.a(stm32f4xx_hal_ltdc.o)
+                0x08003598                HAL_LTDC_EnableDither
+ .text.HAL_RCC_OscConfig
+                0x080035cc      0x33c library.a(stm32f4xx_hal_rcc.o)
+                0x080035cc                HAL_RCC_OscConfig
+ .text.HAL_RCC_ClockConfig
+                0x08003908      0x1f8 library.a(stm32f4xx_hal_rcc.o)
+                0x08003908                HAL_RCC_ClockConfig
+ .text.HAL_RCC_GetSysClockFreq
+                0x08003b00       0x78 library.a(stm32f4xx_hal_rcc.o)
+                0x08003b00                HAL_RCC_GetSysClockFreq
+ .text.HAL_RCC_GetHCLKFreq
+                0x08003b78       0x38 library.a(stm32f4xx_hal_rcc.o)
+                0x08003b78                HAL_RCC_GetHCLKFreq
+ .text.HAL_RCC_GetPCLK1Freq
+                0x08003bb0       0x30 library.a(stm32f4xx_hal_rcc.o)
+                0x08003bb0                HAL_RCC_GetPCLK1Freq
+ .text.HAL_RCCEx_PeriphCLKConfig
+                0x08003be0      0x2e8 library.a(stm32f4xx_hal_rcc_ex.o)
+                0x08003be0                HAL_RCCEx_PeriphCLKConfig
+ .text.HAL_SDRAM_MspInit
+                0x08003ec8        0x2 library.a(stm32f4xx_hal_sdram.o)
+                0x08003ec8                HAL_SDRAM_MspInit
+ .text.HAL_SDRAM_Init
+                0x08003eca       0x40 library.a(stm32f4xx_hal_sdram.o)
+                0x08003eca                HAL_SDRAM_Init
+ .text.HAL_SDRAM_SendCommand
+                0x08003f0a       0x2e library.a(stm32f4xx_hal_sdram.o)
+                0x08003f0a                HAL_SDRAM_SendCommand
+ .text.HAL_SDRAM_ProgramRefreshRate
+                0x08003f38       0x24 library.a(stm32f4xx_hal_sdram.o)
+                0x08003f38                HAL_SDRAM_ProgramRefreshRate
+ .text.SPI_WaitOnFlagUntilTimeout
+                0x08003f5c       0x94 library.a(stm32f4xx_hal_spi.o)
+ .text.HAL_SPI_MspInit
+                0x08003ff0        0x2 library.a(stm32f4xx_hal_spi.o)
+                0x08003ff0                HAL_SPI_MspInit
+ .text.HAL_SPI_Init
+                0x08003ff2       0x82 library.a(stm32f4xx_hal_spi.o)
+                0x08003ff2                HAL_SPI_Init
+ .text.HAL_SPI_MspDeInit
+                0x08004074        0x2 library.a(stm32f4xx_hal_spi.o)
+                0x08004074                HAL_SPI_MspDeInit
+ .text.HAL_SPI_DeInit
+                0x08004076       0x26 library.a(stm32f4xx_hal_spi.o)
+                0x08004076                HAL_SPI_DeInit
+ .text.HAL_SPI_Transmit
+                0x0800409c      0x148 library.a(stm32f4xx_hal_spi.o)
+                0x0800409c                HAL_SPI_Transmit
+ .text.HAL_SPI_TransmitReceive
+                0x080041e4      0x2c4 library.a(stm32f4xx_hal_spi.o)
+                0x080041e4                HAL_SPI_TransmitReceive
+ .text.HAL_SPI_Receive
+                0x080044a8      0x1d0 library.a(stm32f4xx_hal_spi.o)
+                0x080044a8                HAL_SPI_Receive
+ .text.HAL_SPI_GetState
+                0x08004678        0x6 library.a(stm32f4xx_hal_spi.o)
+                0x08004678                HAL_SPI_GetState
+ .text.NMI_Handler
+                0x0800467e        0x2 library.a(stm32f4xx_it.o)
+                0x0800467e                NMI_Handler
+ .text.SVC_Handler
+                0x08004680        0x2 library.a(stm32f4xx_it.o)
+                0x08004680                SVC_Handler
+ .text.DebugMon_Handler
+                0x08004682        0x2 library.a(stm32f4xx_it.o)
+                0x08004682                DebugMon_Handler
+ .text.PendSV_Handler
+                0x08004684        0x2 library.a(stm32f4xx_it.o)
+                0x08004684                PendSV_Handler
+ .text.SysTick_Handler
+                0x08004686        0x4 library.a(stm32f4xx_it.o)
+                0x08004686                SysTick_Handler
+ *fill*         0x0800468a        0x2 
+ .text.FMC_SDRAM_Init
+                0x0800468c       0x6c library.a(stm32f4xx_ll_fmc.o)
+                0x0800468c                FMC_SDRAM_Init
+ .text.FMC_SDRAM_Timing_Init
+                0x080046f8       0x70 library.a(stm32f4xx_ll_fmc.o)
+                0x080046f8                FMC_SDRAM_Timing_Init
+ .text.FMC_SDRAM_SendCommand
+                0x08004768       0x4c library.a(stm32f4xx_ll_fmc.o)
+                0x08004768                FMC_SDRAM_SendCommand
+ .text.FMC_SDRAM_ProgramRefreshRate
+                0x080047b4        0xc library.a(stm32f4xx_ll_fmc.o)
+                0x080047b4                FMC_SDRAM_ProgramRefreshRate
+ .text.SystemInit
+                0x080047c0       0x4c library.a(system_stm32f4xx.o)
+                0x080047c0                SystemInit
+ .text.TS_Init  0x0800480c       0x2c library.a(touch.o)
+                0x0800480c                TS_Init
+ .text.TS_Touched
+                0x08004838       0x30 library.a(touch.o)
+                0x08004838                TS_Touched
+ .text.TS_GetX  0x08004868        0xc library.a(touch.o)
+                0x08004868                TS_GetX
+ .text.TS_GetY  0x08004874        0xc library.a(touch.o)
+                0x08004874                TS_GetY
+ .text          0x08004880      0x118 library.a(startup_stm32f429xx.o)
+                0x08004880                Reset_Handler
+                0x080048d0                HardFault_Handler
+                0x080048d2                MemManage_Handler
+                0x080048d4                BusFault_Handler
+                0x080048d6                UsageFault_Handler
+                0x080048d8                Default_Handler
+                0x080048da                WWDG_IRQHandler
+                0x080048dc                PVD_IRQHandler
+                0x080048de                TAMP_STAMP_IRQHandler
+                0x080048e0                RTC_WKUP_IRQHandler
+                0x080048e2                FLASH_IRQHandler
+                0x080048e4                RCC_IRQHandler
+                0x080048e6                EXTI0_IRQHandler
+                0x080048e8                EXTI1_IRQHandler
+                0x080048ea                EXTI2_IRQHandler
+                0x080048ec                EXTI3_IRQHandler
+                0x080048ee                EXTI4_IRQHandler
+                0x080048f0                DMA1_Stream0_IRQHandler
+                0x080048f2                DMA1_Stream1_IRQHandler
+                0x080048f4                DMA1_Stream2_IRQHandler
+                0x080048f6                DMA1_Stream3_IRQHandler
+                0x080048f8                DMA1_Stream4_IRQHandler
+                0x080048fa                DMA1_Stream5_IRQHandler
+                0x080048fc                DMA1_Stream6_IRQHandler
+                0x080048fe                ADC_IRQHandler
+                0x08004900                CAN1_TX_IRQHandler
+                0x08004902                CAN1_RX0_IRQHandler
+                0x08004904                CAN1_RX1_IRQHandler
+                0x08004906                CAN1_SCE_IRQHandler
+                0x08004908                EXTI9_5_IRQHandler
+                0x0800490a                TIM1_BRK_TIM9_IRQHandler
+                0x0800490c                TIM1_UP_TIM10_IRQHandler
+                0x0800490e                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08004910                TIM1_CC_IRQHandler
+                0x08004912                TIM2_IRQHandler
+                0x08004914                TIM3_IRQHandler
+                0x08004916                TIM4_IRQHandler
+                0x08004918                I2C1_EV_IRQHandler
+                0x0800491a                I2C1_ER_IRQHandler
+                0x0800491c                I2C2_EV_IRQHandler
+                0x0800491e                I2C2_ER_IRQHandler
+                0x08004920                SPI1_IRQHandler
+                0x08004922                SPI2_IRQHandler
+                0x08004924                USART1_IRQHandler
+                0x08004926                USART2_IRQHandler
+                0x08004928                USART3_IRQHandler
+                0x0800492a                EXTI15_10_IRQHandler
+                0x0800492c                RTC_Alarm_IRQHandler
+                0x0800492e                OTG_FS_WKUP_IRQHandler
+                0x08004930                TIM8_BRK_TIM12_IRQHandler
+                0x08004932                TIM8_UP_TIM13_IRQHandler
+                0x08004934                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08004936                TIM8_CC_IRQHandler
+                0x08004938                DMA1_Stream7_IRQHandler
+                0x0800493a                FSMC_IRQHandler
+                0x0800493c                SDIO_IRQHandler
+                0x0800493e                TIM5_IRQHandler
+                0x08004940                SPI3_IRQHandler
+                0x08004942                UART4_IRQHandler
+                0x08004944                UART5_IRQHandler
+                0x08004946                TIM6_DAC_IRQHandler
+                0x08004948                TIM7_IRQHandler
+                0x0800494a                DMA2_Stream0_IRQHandler
+                0x0800494c                DMA2_Stream1_IRQHandler
+                0x0800494e                DMA2_Stream2_IRQHandler
+                0x08004950                DMA2_Stream3_IRQHandler
+                0x08004952                DMA2_Stream4_IRQHandler
+                0x08004954                ETH_IRQHandler
+                0x08004956                ETH_WKUP_IRQHandler
+                0x08004958                CAN2_TX_IRQHandler
+                0x0800495a                CAN2_RX0_IRQHandler
+                0x0800495c                CAN2_RX1_IRQHandler
+                0x0800495e                CAN2_SCE_IRQHandler
+                0x08004960                OTG_FS_IRQHandler
+                0x08004962                DMA2_Stream5_IRQHandler
+                0x08004964                DMA2_Stream6_IRQHandler
+                0x08004966                DMA2_Stream7_IRQHandler
+                0x08004968                USART6_IRQHandler
+                0x0800496a                I2C3_EV_IRQHandler
+                0x0800496c                I2C3_ER_IRQHandler
+                0x0800496e                OTG_HS_EP1_OUT_IRQHandler
+                0x08004970                OTG_HS_EP1_IN_IRQHandler
+                0x08004972                OTG_HS_WKUP_IRQHandler
+                0x08004974                OTG_HS_IRQHandler
+                0x08004976                DCMI_IRQHandler
+                0x08004978                CRYP_IRQHandler
+                0x0800497a                HASH_RNG_IRQHandler
+                0x0800497c                FPU_IRQHandler
+                0x0800497e                UART7_IRQHandler
+                0x08004980                UART8_IRQHandler
+                0x08004982                SPI4_IRQHandler
+                0x08004984                SPI5_IRQHandler
+                0x08004986                SPI6_IRQHandler
+                0x08004988                SAI1_IRQHandler
+                0x0800498a                LTDC_IRQHandler
+                0x0800498c                LTDC_ER_IRQHandler
+                0x0800498e                DMA2D_IRQHandler
+ .text.ili9341_GetLcdPixelWidth
+                0x08004998        0x4 library.a(ili9341.o)
+                0x08004998                ili9341_GetLcdPixelWidth
+ .text.ili9341_GetLcdPixelHeight
+                0x0800499c        0x6 library.a(ili9341.o)
+                0x0800499c                ili9341_GetLcdPixelHeight
+ .text.ili9341_DisplayOn
+                0x080049a2        0x6 library.a(ili9341.o)
+                0x080049a2                ili9341_DisplayOn
+ .text.ili9341_DisplayOff
+                0x080049a8        0x6 library.a(ili9341.o)
+                0x080049a8                ili9341_DisplayOff
+ .text.ili9341_Init
+                0x080049ae      0x292 library.a(ili9341.o)
+                0x080049ae                ili9341_Init
+ .text.ili9341_ReadID
+                0x08004c40       0x12 library.a(ili9341.o)
+                0x08004c40                ili9341_ReadID
+ *fill*         0x08004c52        0x2 
+ .text.BSP_TS_Init
+                0x08004c54       0x44 library.a(stm32f429i_discovery_ts.o)
+                0x08004c54                BSP_TS_Init
+ .text.BSP_TS_GetState
+                0x08004c98       0xc8 library.a(stm32f429i_discovery_ts.o)
+                0x08004c98                BSP_TS_GetState
+ .text.stmpe811_Reset
+                0x08004d60       0x28 library.a(stmpe811.o)
+                0x08004d60                stmpe811_Reset
+ .text.stmpe811_ReadID
+                0x08004d88       0x24 library.a(stmpe811.o)
+                0x08004d88                stmpe811_ReadID
+ .text.stmpe811_TS_DetectTouch
+                0x08004dac       0x38 library.a(stmpe811.o)
+                0x08004dac                stmpe811_TS_DetectTouch
+ .text.stmpe811_TS_GetXY
+                0x08004de4       0x3c library.a(stmpe811.o)
+                0x08004de4                stmpe811_TS_GetXY
+ .text.stmpe811_Init
+                0x08004e20       0x30 library.a(stmpe811.o)
+                0x08004e20                stmpe811_Init
+ .text.stmpe811_EnableGlobalIT
+                0x08004e50       0x1e library.a(stmpe811.o)
+                0x08004e50                stmpe811_EnableGlobalIT
+ .text.stmpe811_DisableGlobalIT
+                0x08004e6e       0x1c library.a(stmpe811.o)
+                0x08004e6e                stmpe811_DisableGlobalIT
+ .text.stmpe811_EnableITSource
+                0x08004e8a       0x20 library.a(stmpe811.o)
+                0x08004e8a                stmpe811_EnableITSource
+ .text.stmpe811_TS_EnableIT
+                0x08004eaa       0x1a library.a(stmpe811.o)
+                0x08004eaa                stmpe811_TS_EnableIT
+ .text.stmpe811_DisableITSource
+                0x08004ec4       0x20 library.a(stmpe811.o)
+                0x08004ec4                stmpe811_DisableITSource
+ .text.stmpe811_TS_DisableIT
+                0x08004ee4       0x14 library.a(stmpe811.o)
+                0x08004ee4                stmpe811_TS_DisableIT
+ .text.stmpe811_ReadGITStatus
+                0x08004ef8       0x10 library.a(stmpe811.o)
+                0x08004ef8                stmpe811_ReadGITStatus
+ .text.stmpe811_TS_ITStatus
+                0x08004f08        0x6 library.a(stmpe811.o)
+                0x08004f08                stmpe811_TS_ITStatus
+ .text.stmpe811_ClearGlobalIT
+                0x08004f0e        0xa library.a(stmpe811.o)
+                0x08004f0e                stmpe811_ClearGlobalIT
+ .text.stmpe811_TS_ClearIT
+                0x08004f18        0x6 library.a(stmpe811.o)
+                0x08004f18                stmpe811_TS_ClearIT
+ .text.stmpe811_IO_EnableAF
+                0x08004f1e       0x20 library.a(stmpe811.o)
+                0x08004f1e                stmpe811_IO_EnableAF
+ .text.stmpe811_TS_Start
+                0x08004f3e       0xa4 library.a(stmpe811.o)
+                0x08004f3e                stmpe811_TS_Start
+ *fill*         0x08004fe2        0x2 
+ .text.exit     0x08004fe4       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+                0x08004fe4                exit
+ .text.__libc_init_array
+                0x08005004       0x48 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+                0x08005004                __libc_init_array
+ .text.memset   0x0800504c       0xa0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+                0x0800504c                memset
+ .text.strcat   0x080050ec       0x40 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+                0x080050ec                strcat
+ .text.strcpy   0x0800512c       0xbc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+                0x0800512c                strcpy
+ *fill*         0x080051e8       0x18 
+ .text          0x08005200       0xdc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strlen.o)
+                0x08005200                strlen
+ .text.startup.register_fini
+                0x080052dc       0x14 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x080052f0       0xb0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x080052f0                __call_exitprocs
+ .text.atexit   0x080053a0        0xc y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+                0x080053a0                atexit
+ .text.__libc_fini_array
+                0x080053ac       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+                0x080053ac                __libc_fini_array
+ .text.__retarget_lock_acquire_recursive
+                0x080053e0        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x080053e0                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x080053e4        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x080053e4                __retarget_lock_release_recursive
+ .text.__register_exitproc
+                0x080053e8       0x88 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+                0x080053e8                __register_exitproc
+ .text._exit    0x08005470        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+                0x08005470                _exit
+ *(.init)
+ .init          0x08005474        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08005474                _init
+ .init          0x08005478        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x08005480        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08005480                _fini
+ .fini          0x08005484        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.BtnADD.str1.4
+                0x0800548c        0x2 obj/Lab0Main.o
+ *fill*         0x0800548e        0x2 
+ .rodata.BtnDIV.str1.4
+                0x08005490        0x2 obj/Lab0Main.o
+ *fill*         0x08005492        0x2 
+ .rodata.BtnMUL.str1.4
+                0x08005494        0x2 obj/Lab0Main.o
+ *fill*         0x08005496        0x2 
+ .rodata.Num2Text.str1.4
+                0x08005498       0x15 obj/Lab0Main.o
+                                 0x19 (size before relaxing)
+ *fill*         0x080054ad        0x3 
+ .rodata.UpdateDisplay.str1.4
+                0x080054b0        0xd obj/Lab0Main.o
+ *fill*         0x080054bd        0x3 
+ .rodata.bgnd.6875
+                0x080054c0       0x10 obj/Lab0Main.o
+ .rodata.brdr.6876
+                0x080054d0       0x10 obj/Lab0Main.o
+ .rodata.fgnd.6874
+                0x080054e0       0x10 obj/Lab0Main.o
+ .rodata.main.str1.4
+                0x080054f0       0x19 obj/Lab0Main.o
+ *fill*         0x08005509        0x3 
+ .rodata.str1.4
+                0x0800550c      0x138 obj/Lab0Main.o
+                                0x136 (size before relaxing)
+ .rodata.DisplayHeader.str1.1
+                0x08005644       0x27 library.a(initialize.o)
+ .rodata.Font12_Table
+                0x0800566b      0x474 library.a(stm32f429i_discovery_lcd.o)
+                0x0800566b                Font12_Table
+ .rodata.Font16_Table
+                0x08005adf      0xbe0 library.a(stm32f429i_discovery_lcd.o)
+                0x08005adf                Font16_Table
+ .rodata.Font20_Table
+                0x080066bf      0xed8 library.a(stm32f429i_discovery_lcd.o)
+                0x080066bf                Font20_Table
+ .rodata.Font24_Table
+                0x08007597     0x1ab8 library.a(stm32f429i_discovery_lcd.o)
+                0x08007597                Font24_Table
+ .rodata.APBAHBPrescTable
+                0x0800904f       0x10 library.a(stm32f4xx_hal_rcc.o)
+                0x0800904f                APBAHBPrescTable
+ *fill*         0x0800905f        0x1 
+ .rodata._global_impure_ptr
+                0x08009060        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+                0x08009060                _global_impure_ptr
+ *(.eh_frame*)
+ .eh_frame      0x08009064        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08009064        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+
+.glue_7         0x08009068        0x0
+ .glue_7        0x08009068        0x0 linker stubs
+
+.glue_7t        0x08009068        0x0
+ .glue_7t       0x08009068        0x0 linker stubs
+
+.vfp11_veneer   0x08009068        0x0
+ .vfp11_veneer  0x08009068        0x0 linker stubs
+
+.v4_bx          0x08009068        0x0
+ .v4_bx         0x08009068        0x0 linker stubs
+
+.iplt           0x08009068        0x0
+ .iplt          0x08009068        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08009068                __exidx_start = .
+
+.ARM.exidx      0x08009068        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x08009068        0x8 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x08009070                __exidx_end = .
+                0x08009070                __etext = .
+
+.rel.dyn        0x08009070        0x0
+ .rel.iplt      0x08009070        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.data           0x20000000      0x768 load address 0x08009070
+                0x20000000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.buttons  0x20000000      0x258 obj/Lab0Main.o
+ .data.function
+                0x20000258        0x4 obj/Lab0Main.o
+ .data.message.6910
+                0x2000025c       0x2c obj/Lab0Main.o
+ .data.prev2.6896
+                0x20000288        0x4 obj/Lab0Main.o
+ .data.radix    0x2000028c        0x4 obj/Lab0Main.o
+ .data.BUTTON_PORT
+                0x20000290        0x4 library.a(stm32f429i_discovery.o)
+                0x20000290                BUTTON_PORT
+ .data.I2cxTimeout
+                0x20000294        0x4 library.a(stm32f429i_discovery.o)
+                0x20000294                I2cxTimeout
+ .data.SpixTimeout
+                0x20000298        0x4 library.a(stm32f429i_discovery.o)
+                0x20000298                SpixTimeout
+ .data.Font12   0x2000029c        0x8 library.a(stm32f429i_discovery_lcd.o)
+                0x2000029c                Font12
+ .data.Font16   0x200002a4        0x8 library.a(stm32f429i_discovery_lcd.o)
+                0x200002a4                Font16
+ .data.Font20   0x200002ac        0x8 library.a(stm32f429i_discovery_lcd.o)
+                0x200002ac                Font20
+ .data.Font24   0x200002b4        0x8 library.a(stm32f429i_discovery_lcd.o)
+                0x200002b4                Font24
+ .data.SystemCoreClock
+                0x200002bc        0x4 library.a(system_stm32f4xx.o)
+                0x200002bc                SystemCoreClock
+ .data.x        0x200002c0        0x4 library.a(touch.o)
+ .data.y        0x200002c4        0x4 library.a(touch.o)
+ .data.ili9341_drv
+                0x200002c8       0x38 library.a(ili9341.o)
+                0x200002c8                ili9341_drv
+ .data.stmpe811_ts_drv
+                0x20000300       0x28 library.a(stmpe811.o)
+                0x20000300                stmpe811_ts_drv
+ .data.impure_data
+                0x20000328      0x428 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .data.__atexit_recursive_mutex
+                0x20000750        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x20000750                __atexit_recursive_mutex
+                0x20000754                . = ALIGN (0x4)
+                0x20000754                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x20000754                PROVIDE (__preinit_array_end = .)
+                0x20000754                . = ALIGN (0x4)
+                0x20000754                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ .init_array.00000
+                0x20000754        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ *(.init_array)
+ .init_array    0x20000758        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x2000075c                PROVIDE (__init_array_end = .)
+                0x20000760                . = ALIGN (0x8)
+ *fill*         0x2000075c        0x4 
+                0x20000760                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x20000760        0x4 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000764                PROVIDE (__fini_array_end = .)
+                0x20000768                . = ALIGN (0x8)
+ *fill*         0x20000764        0x4 
+                0x20000768                __data_end__ = .
+
+.igot.plt       0x20000768        0x0 load address 0x080097d8
+ .igot.plt      0x20000768        0x0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.bss            0x20000768      0xa31 load address 0x080097d8
+                0x20000768                __bss_start__ = .
+ *(.bss*)
+ .bss           0x20000768       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.line1     0x20000784       0x64 obj/Lab0Main.o
+ .bss.line2.6895
+                0x200007e8       0x64 obj/Lab0Main.o
+ .bss.op1       0x2000084c        0x4 obj/Lab0Main.o
+ .bss.op2       0x20000850        0x4 obj/Lab0Main.o
+ .bss.prev1.6894
+                0x20000854       0x64 obj/Lab0Main.o
+ .bss.buffer    0x200008b8      0x620 library.a(initialize.o)
+ .bss.txtCol    0x20000ed8        0x4 library.a(initialize.o)
+ .bss.txtRow    0x20000edc        0x4 library.a(initialize.o)
+ .bss.Is_LCD_IO_Initialized
+                0x20000ee0        0x1 library.a(stm32f429i_discovery.o)
+ *fill*         0x20000ee1        0x3 
+ .bss.SpiHandle
+                0x20000ee4       0x58 library.a(stm32f429i_discovery.o)
+ .bss.ActiveLayer
+                0x20000f3c        0x4 library.a(stm32f429i_discovery_lcd.o)
+ .bss.Dma2dHandler
+                0x20000f40       0x40 library.a(stm32f429i_discovery_lcd.o)
+ .bss.DrawProp  0x20000f80       0x18 library.a(stm32f429i_discovery_lcd.o)
+ .bss.LtdcHandler
+                0x20000f98       0xa8 library.a(stm32f429i_discovery_lcd.o)
+ .bss.PeriphClkInitStruct
+                0x20001040       0x30 library.a(stm32f429i_discovery_lcd.o)
+ .bss.Command   0x20001070       0x10 library.a(stm32f429i_discovery_sdram.o)
+ .bss.SdramHandle
+                0x20001080       0x34 library.a(stm32f429i_discovery_sdram.o)
+ .bss.Timing    0x200010b4       0x1c library.a(stm32f429i_discovery_sdram.o)
+ .bss.dmaHandle.11858
+                0x200010d0       0x50 library.a(stm32f429i_discovery_sdram.o)
+ .bss.uwTick    0x20001120        0x4 library.a(stm32f4xx_hal.o)
+ .bss.TsDrv     0x20001124        0x4 library.a(stm32f429i_discovery_ts.o)
+ .bss.TsXBoundary
+                0x20001128        0x2 library.a(stm32f429i_discovery_ts.o)
+ .bss.TsYBoundary
+                0x2000112a        0x2 library.a(stm32f429i_discovery_ts.o)
+ .bss._x.12050  0x2000112c        0x4 library.a(stm32f429i_discovery_ts.o)
+ .bss._y.12051  0x20001130        0x4 library.a(stm32f429i_discovery_ts.o)
+ .bss.stmpe811  0x20001134        0x2 library.a(stmpe811.o)
+                0x20001134                stmpe811
+ *(COMMON)
+ *fill*         0x20001136        0x2 
+ COMMON         0x20001138       0x3c library.a(stm32f429i_discovery.o)
+                0x20001138                I2cHandle
+ COMMON         0x20001174        0x4 library.a(stm32f429i_discovery_lcd.o)
+                0x20001174                LcdDrv
+ COMMON         0x20001178       0x21 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x20001178                __lock___atexit_recursive_mutex
+                0x2000117c                __lock___arc4random_mutex
+                0x20001180                __lock___env_recursive_mutex
+                0x20001184                __lock___sinit_recursive_mutex
+                0x20001188                __lock___malloc_recursive_mutex
+                0x2000118c                __lock___at_quick_exit_mutex
+                0x20001190                __lock___dd_hash_mutex
+                0x20001194                __lock___tz_mutex
+                0x20001198                __lock___sfp_recursive_mutex
+                0x20001199                __bss_end__ = .
+
+.ccm            0x10000000        0x0
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                __ccm_start__ = .
+ *(.ccm*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                __ccm_end__ = .
+
+.heap           0x10000000      0xc00
+                0x10000000                __end__ = .
+                0x10000000                end = __end__
+ *(.heap*)
+ .heap          0x10000000      0xc00 library.a(startup_stm32f429xx.o)
+                0x10000000                __HeapBase
+                0x10000c00                __HeapLimit = .
+
+.stack_dummy    0x10000000     0x1000
+ *(.stack)
+ .stack         0x10000000     0x1000 library.a(startup_stm32f429xx.o)
+                0x10010000                __StackTop = (ORIGIN (CCM) + LENGTH (CCM))
+                0x1000f000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x10010000                PROVIDE (__stack = __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region CCM overflowed with stack)
+OUTPUT(output.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x0000001e       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x00000052       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000006e       0x34 obj/Lab0Main.o
+ .ARM.attributes
+                0x000000a2       0x25 obj/Lab0Calculator.o
+ .ARM.attributes
+                0x000000c7       0x39 library.a(initialize.o)
+ .ARM.attributes
+                0x00000100       0x39 library.a(stm32f429i_discovery.o)
+ .ARM.attributes
+                0x00000139       0x39 library.a(stm32f429i_discovery_lcd.o)
+ .ARM.attributes
+                0x00000172       0x39 library.a(stm32f429i_discovery_sdram.o)
+ .ARM.attributes
+                0x000001ab       0x39 library.a(stm32f4xx_hal.o)
+ .ARM.attributes
+                0x000001e4       0x39 library.a(stm32f4xx_hal_cortex.o)
+ .ARM.attributes
+                0x0000021d       0x39 library.a(stm32f4xx_hal_dma.o)
+ .ARM.attributes
+                0x00000256       0x39 library.a(stm32f4xx_hal_dma2d.o)
+ .ARM.attributes
+                0x0000028f       0x39 library.a(stm32f4xx_hal_gpio.o)
+ .ARM.attributes
+                0x000002c8       0x39 library.a(stm32f4xx_hal_i2c.o)
+ .ARM.attributes
+                0x00000301       0x39 library.a(stm32f4xx_hal_ltdc.o)
+ .ARM.attributes
+                0x0000033a       0x39 library.a(stm32f4xx_hal_rcc.o)
+ .ARM.attributes
+                0x00000373       0x39 library.a(stm32f4xx_hal_rcc_ex.o)
+ .ARM.attributes
+                0x000003ac       0x39 library.a(stm32f4xx_hal_sdram.o)
+ .ARM.attributes
+                0x000003e5       0x39 library.a(stm32f4xx_hal_spi.o)
+ .ARM.attributes
+                0x0000041e       0x39 library.a(stm32f4xx_it.o)
+ .ARM.attributes
+                0x00000457       0x39 library.a(stm32f4xx_ll_fmc.o)
+ .ARM.attributes
+                0x00000490       0x39 library.a(system_stm32f4xx.o)
+ .ARM.attributes
+                0x000004c9       0x39 library.a(touch.o)
+ .ARM.attributes
+                0x00000502       0x1f library.a(startup_stm32f429xx.o)
+ .ARM.attributes
+                0x00000521       0x39 library.a(ili9341.o)
+ .ARM.attributes
+                0x0000055a       0x39 library.a(stm32f429i_discovery_ts.o)
+ .ARM.attributes
+                0x00000593       0x39 library.a(stmpe811.o)
+ .ARM.attributes
+                0x000005cc       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000600       0x32 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000632       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000666       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000069a       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x000006ce       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000702       0x1c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000071e       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000752       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000786       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000007ba       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000007ee       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000822       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x00000856       0x32 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000888       0x1e y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/crtn.o
+
+.comment        0x00000000      0x172
+ .comment       0x00000000       0x75 obj/Lab0Main.o
+                                 0x76 (size before relaxing)
+ .comment       0x00000075       0x7e library.a(initialize.o)
+                                 0x7f (size before relaxing)
+ .comment       0x000000f3       0x7f library.a(stm32f429i_discovery.o)
+                                 0x80 (size before relaxing)
+ .comment       0x00000172       0x80 library.a(stm32f429i_discovery_lcd.o)
+ .comment       0x00000172       0x80 library.a(stm32f429i_discovery_sdram.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_cortex.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_dma.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_dma2d.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_gpio.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_i2c.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_ltdc.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_rcc.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_rcc_ex.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_sdram.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_hal_spi.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_it.o)
+ .comment       0x00000172       0x80 library.a(stm32f4xx_ll_fmc.o)
+ .comment       0x00000172       0x80 library.a(system_stm32f4xx.o)
+ .comment       0x00000172       0x80 library.a(touch.o)
+ .comment       0x00000172       0x80 library.a(ili9341.o)
+ .comment       0x00000172       0x80 library.a(stm32f429i_discovery_ts.o)
+ .comment       0x00000172       0x80 library.a(stmpe811.o)
+
+.debug_frame    0x00000000      0x284
+ .debug_frame   0x00000000       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000028       0x2c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .debug_frame   0x00000054       0x38 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
+ .debug_frame   0x0000008c       0x28 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcat.o)
+ .debug_frame   0x000000b4       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x000000d4       0x5c y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000130       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000150       0x34 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .debug_frame   0x00000184       0xb0 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .debug_frame   0x00000234       0x30 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000264       0x20 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+
+.stabstr        0x00000000      0x117
+ .stabstr       0x00000000      0x117 y:/coen20/gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
