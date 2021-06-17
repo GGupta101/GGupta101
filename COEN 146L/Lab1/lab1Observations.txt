@@ -1,0 +1,56 @@
+//Name: Gagan Gupta 
+//Date: 09/24/20
+//Title: COEN 146L : Lab 1
+
+Step 1: Wrote the Sample C program showing the usage of a parent and child Process
+
+Step 2: Compiled the Sample C Process program without errors or warnings
+
+Step 3: Ran the executable file for the Sample C Process program
+	Console Output:
+		Segmentation fault (core dumped)
+	Observations:
+		This is due to us not inputing the console argument used for usleep
+
+Step 4: Ran the executable file for the Sample C Process program with the 3000, 500, and 5000 inputs
+	Console Created 100 parents and 100 children processes no matter the arugment given
+	Observations:
+		The larger the value for the n term passed in the longer the usleep is for each process, 
+		therefore meaning the higher n is the longer the total process creation time is.
+
+Step 5: Wrote the Sample C program showing the usage of 2 Threads and Ran its executable file
+	Console Output:
+		[ggupta@linux11114 Lab1]$ gcc lab1_s5.c -o lab1_s5 -lpthread
+		[ggupta@linux11114 Lab1]$ ./lab1_s5
+		Segmentation fault (core dumped)
+		[ggupta@linux11114 Lab1]$ ./lab1_s5 3000
+		Thread 0 returned 
+		Thread 1 returned 
+		Main thread done.
+	Observations:
+		This has the same behavior as the process code in steps 3 and 4 except in this we use threads
+
+Step 6 and 7: CS and PS Calculations
+	When ran with the following inputs, these were the calculations 
+	for the Circuit Switching and Packet Switching Scenarios:
+	
+	linkBandwidth = 200 Mbps
+	userBandwidth = 20 Mbps
+	tPSuser = 0.10
+	nPSusers = 19
+	
+	Console Output:
+		[ggupta@linux11114 Lab1]$ gcc lab1_s6s7.c -o lab1_s6s7 -lm
+		[ggupta@linux11114 Lab1]$ ./lab1_s6s7 200 20 0.10 19
+		CS Scenario: 10 users
+		PS Scenario: 
+		The probability that a given (specific) user is busy transmitting: 0.100000
+		The probability that one specific other user is not busy: 0.900000
+		The probability that all of the other specific other users are not busy: 0.150095
+		The probability that one specific user is transmitting and the remaining users are not transmitting: 0.015009
+		The probability that exactly one (any one) of the nPSusers users is busy: 0.285180
+		The probability that 10 specific users of nPSusers are transmitting and the others are idle: 3.874205e-11
+		The probability that any 10 users of nPSusers are transmitting and the others are idle: 3.578913e-06
+		The probability that more than 10 users of nPSusers are transmitting and the others are idle: 5.277297e-18
+
+
