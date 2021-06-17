@@ -1,0 +1,396 @@
+SQL> start /home/ggupta/Documents/COEN178L/Labs/Lab3/lab3.sql
+SQL> PROMPT ----------LAB 3 PART 1----------
+> PROMPT Part 1 Exercise 1 Approach 1
+----------LAB 3 PART 1--------- PROMPT Part 1 Exercise 1 Approach 1
+SQL> SELECT first||last AS fullname, salary FROM staff_2010 WHERE salary = (SELECT MAX(salary) from Staff_2010);
+
+FULLNAME                                     SALARY                             
+---------------------------------------- ----------                             
+ Timothy P.Love                              179700                             
+ Michael M.Hash                              179700                             
+
+SQL> PROMPT Part 1 Exercise 1 Approach 2
+Part 1 Exercise 1 Approach 2
+SQL> SELECT first||last AS fullname, salary FROM staff_2010 WHERE salary >= ALL(SELECT salary from Staff_2010);
+
+FULLNAME                                     SALARY                             
+---------------------------------------- ----------                             
+ Michael M.Hash                              179700                             
+ Timothy P.Love                              179700                             
+
+SQL> PROMPT Part 1 Exercise 2a
+Part 1 Exercise 2a
+SQL> SELECT last, salary FROM staff_2010 WHERE salary = (SELECT salary from staff_2010 WHERE LOWER(last) = 'zichal');
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Simas                    100000                                                 
+Teehee                   100000                                                 
+Vega                     100000                                                 
+Bhowmik                  100000                                                 
+DuBois                   100000                                                 
+Frankel                  100000                                                 
+Hurwitz                  100000                                                 
+Jarvis-Shean             100000                                                 
+Jones                    100000                                                 
+Zichal                   100000                                                 
+
+10 rows selected.
+
+SQL> PROMPT Part 1 Exercise 2b
+Part 1 Exercise 2b
+SQL> SELECT last, salary FROM staff_2010 WHERE salary = (SELECT salary from staff_2010 WHERE LOWER(last) = 'young');
+SELECT last, salary FROM staff_2010 WHERE salary = (SELECT salary from staff_2010 WHERE LOWER(last) = 'young')
+                                                    *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+SQL> PROMPT Part 1 Exercise 2b FIXED
+Part 1 Exercise 2b FIXED
+SQL> SELECT last, salary FROM staff_2010 WHERE salary = ANY (SELECT salary from staff_2010 WHERE LOWER(last) = 'young') ORDER BY salary DESC;
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Attili                    58511                                                 
+Young                     58511                                                 
+Claude                    58511                                                 
+Canery                    58511                                                 
+Metcalf                   42000                                                 
+Mrazek                    42000                                                 
+Northern                  42000                                                 
+Ocampo                    42000                                                 
+Oxtoby                    42000                                                 
+Page                      42000                                                 
+Pope                      42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Portilla                  42000                                                 
+Posey                     42000                                                 
+Pulliam                   42000                                                 
+Robertson                 42000                                                 
+Schaub                    42000                                                 
+Schmuck                   42000                                                 
+Sinha                     42000                                                 
+Sirbu                     42000                                                 
+Smith                     42000                                                 
+Smith                     42000                                                 
+Stickel                   42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Swanson                   42000                                                 
+Tennison                  42000                                                 
+Thomas                    42000                                                 
+Tranchin                  42000                                                 
+Alley                     42000                                                 
+Asen                      42000                                                 
+Ayling                    42000                                                 
+Baggetto                  42000                                                 
+Bates                     42000                                                 
+Bisi                      42000                                                 
+Block                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Campbell                  42000                                                 
+Campos                    42000                                                 
+Carden                    42000                                                 
+Castillo                  42000                                                 
+Chhabra                   42000                                                 
+Cobbina                   42000                                                 
+Conrad                    42000                                                 
+Cuba                      42000                                                 
+Cunningham                42000                                                 
+Donovan                   42000                                                 
+Dorsett                   42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Faulman                   42000                                                 
+Fenn                      42000                                                 
+Fergenson                 42000                                                 
+Ford                      42000                                                 
+Frank                     42000                                                 
+Godfrey                   42000                                                 
+Gottlieb                  42000                                                 
+Grant                     42000                                                 
+Hanson                    42000                                                 
+Harris                    42000                                                 
+Hegde                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Hernandez                 42000                                                 
+Hiatt                     42000                                                 
+Hughes                    42000                                                 
+Jackson                   42000                                                 
+Jones                     42000                                                 
+Kennedy                   42000                                                 
+Ledbetter                 42000                                                 
+Lee                       42000                                                 
+Lewin                     42000                                                 
+Lewis                     42000                                                 
+Limon                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Young                     42000                                                 
+
+67 rows selected.
+
+SQL> PROMPT Part 1 Exercise 3
+Part 1 Exercise 3
+SQL> SELECT COUNT(salary) AS SALARIES_100K_ABOVE FROM staff_2010 WHERE salary > 100000;
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                134                                                             
+
+SQL> PROMPT Part 1 Exercise 4
+Part 1 Exercise 4
+SQL> SELECT salary, COUNT(salary) AS SALARIES_100K_ABOVE FROM staff_2010 WHERE salary > 100000 GROUP BY salary ORDER BY salary DESC;
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    179700                   2                                                  
+    172200                  23                                                  
+    172000                   1                                                  
+    165000                   1                                                  
+    162900                   1                                                  
+    162500                   1                                                  
+    158500                   9                                                  
+    155500                   5                                                  
+    153500                   2                                                  
+    150000                   3                                                  
+    149000                   2                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    148510                   2                                                  
+    147500                   4                                                  
+    145000                   1                                                  
+    144868                   1                                                  
+    140259                   1                                                  
+    140000                   2                                                  
+    139500                   1                                                  
+    136134                   1                                                  
+    132009                   1                                                  
+    130500                  26                                                  
+    130000                   5                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    129758                   1                                                  
+    126251                   1                                                  
+    123758                   1                                                  
+    122744                   1                                                  
+    120000                   8                                                  
+    115731                   1                                                  
+    114000                   3                                                  
+    113605                   1                                                  
+    113000                   5                                                  
+    112774                   1                                                  
+    110500                   1                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    110000                   1                                                  
+    107770                   1                                                  
+    106839                   1                                                  
+    105211                   1                                                  
+    102829                   1                                                  
+    102000                   8                                                  
+    100904                   2                                                  
+
+40 rows selected.
+
+SQL> PROMPT Part 1 Exercise 5
+Part 1 Exercise 5
+SQL> SELECT salary, salaries_100k_above FROM (SELECT salary, count(salary) AS SALARIES_100K_ABOVE FROM staff_2010 WHERE salary > 100000 GROUP BY salary) WHERE salaries_100k_above>=10 ORDER BY salary DESC;
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    172200                  23                                                  
+    130500                  26                                                  
+
+SQL> PROMPT Part 1 Exercise 6
+Part 1 Exercise 6
+SQL> SELECT last FROM staff_2010 WHERE REGEXP_LIKE (last, '([aeiou])\1', 'i');
+
+LAST                                                                            
+--------------------                                                            
+Reed                                                                            
+Reeves                                                                          
+Sheehy                                                                          
+Smoot                                                                           
+Sweeney                                                                         
+Teehee                                                                          
+Bookey-Baker                                                                    
+Brooke                                                                          
+Deese                                                                           
+Freeman                                                                         
+Goodman                                                                         
+
+LAST                                                                            
+--------------------                                                            
+Goodman                                                                         
+Green                                                                           
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+Keenan                                                                          
+Koo                                                                             
+Lee                                                                             
+Lee                                                                             
+Voorman                                                                         
+
+21 rows selected.
+
+SQL> SET ECHO OFF
+Creating and Populating L_EMP and L_DEPT
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> PROMPT ----------LAB 3 PART 2----------
+> PROMPT Part 2 Exercise 7
+----------LAB 3 PART 2--------- PROMPT Part 2 Exercise 7
+SQL> SELECT deptid AS deptno, COUNT(*) AS empcount FROM L_EMP GROUP BY deptid ORDER BY empcount;
+
+DEPTN   EMPCOUNT                                                                
+----- ----------                                                                
+d2             1                                                                
+d3             2                                                                
+d1             4                                                                
+
+SQL> PROMPT Part 2 Exercise 8a
+Part 2 Exercise 8a
+SQL> SELECT deptno, deptname, empcount FROM (SELECT deptid AS deptno, COUNT(*) AS empcount FROM L_EMP GROUP BY deptid),L_DEPT WHERE deptno = L_DEPT.deptid;
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d3    Testing             2                                                     
+d1    Research            4                                                     
+d2    Devt                1                                                     
+
+SQL> PROMPT Part 2 Exercise 8b
+Part 2 Exercise 8b
+SQL> SELECT deptno, deptname, empcount FROM (SELECT deptid AS deptno, COUNT(*) AS empcount FROM L_EMP GROUP BY deptid),L_DEPT WHERE deptno = L_DEPT.deptid ORDER BY empcount;
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d2    Devt                1                                                     
+d3    Testing             2                                                     
+d1    Research            4                                                     
+
+SQL> PROMPT Part 2 Exercise 9 Attempt 1
+Part 2 Exercise 9 Attempt 1
+SQL> SELECT deptid, MAX(COUNT(*)) FROM L_EMP GROUP BY deptid;
+SELECT deptid, MAX(COUNT(*)) FROM L_EMP GROUP BY deptid
+       *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> PROMPT Part 2 Exercise 9 Attempt 2
+Part 2 Exercise 9 Attempt 2
+SQL> SELECT deptid FROM L_EMP GROUP BY deptid HAVING COUNT(*) = (SELECT COUNT(*) FROM L_EMP GROUP BY deptid);
+SELECT deptid FROM L_EMP GROUP BY deptid HAVING COUNT(*) = (SELECT COUNT(*) FROM L_EMP GROUP BY deptid)
+                                                            *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+SQL> PROMPT Part 2 Exercise 9a
+Part 2 Exercise 9a
+SQL> SELECT deptid FROM L_EMP GROUP BY deptid HAVING COUNT(*) = (SELECT MAX(COUNT(*)) FROM L_EMP GROUP BY deptid);
+
+DEPTI                                                                           
+-----                                                                           
+d1                                                                              
+
+SQL> PROMPT Part 2 Exercise 9b
+Part 2 Exercise 9b
+SQL> SELECT deptno, deptname, empcount FROM (SELECT deptid AS deptno, COUNT(*) AS empcount FROM L_EMP GROUP BY deptid HAVING COUNT(*) = (SELECT MAX(COUNT(*)) FROM L_EMP GROUP BY deptid)),L_DEPT WHERE deptno = L_DEPT.deptid;
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d1    Research            4                                                     
+
+SQL> PROMPT Part 2 Exercise 10a
+Part 2 Exercise 10a
+SQL> SELECT * FROM L_EMP NATURAL JOIN L_DEPT;
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             1 smith      Research                                            
+d2             2 jones      Devt                                                
+d1             3 wayne      Research                                            
+d3             4 moor       Testing                                             
+d1             5 king       Research                                            
+d1             6 chen       Research                                            
+d3             7 winger     Testing                                             
+
+7 rows selected.
+
+SQL> PROMPT Part 2 Exercise 10b
+Part 2 Exercise 10b
+SQL> SELECT L_EMP.deptid, empno, empname, deptname FROM L_EMP, L_DEPT WHERE L_EMP.deptid=L_DEPT.deptid;
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             1 smith      Research                                            
+d2             2 jones      Devt                                                
+d1             3 wayne      Research                                            
+d3             4 moor       Testing                                             
+d1             5 king       Research                                            
+d1             6 chen       Research                                            
+d3             7 winger     Testing                                             
+
+7 rows selected.
+
+SQL> SET ECHO OFF
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> spool off;

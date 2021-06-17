@@ -1,0 +1,20 @@
+
+                                             Employee Listing  May 18, 2020                                             
+                                                                                                                        
+Name                 Depar        Salary                                                                                
+-------------------- ----- -------------                                                                                
+J.Smith              d1         $100,000                                                                                
+M.Jones              d1         $120,000                                                                                
+D.Clark              d2         $200,000                                                                                
+G.Gupta              d3         $150,000                                                                                
+N.Gupta              d2         $175,000                                                                                
+
+
+
+
+
+
+
+
+
+                                                     COEN 178 Lab-7                                                     

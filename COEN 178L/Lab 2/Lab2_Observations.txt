@@ -1,0 +1,20 @@
+Name: Gagan Gupta
+Date: 04/13/2020 
+Title: COEN 178 Lab2 Observations
+
+
+PART 1 QUESTIONS:
+a) Did you successfully insert all the tuples?
+---I was able to insert all of the tuples except the ('dg5','c32','t') tuple into the schedule table as the c32 custid does not exist in the customer table.
+
+b) Did you successfully insert ('dsg','c2','s') into the schedule table?
+-- I was not able to add this tuple into the table as the check in the deliveryservice table for day limits the delivery days to weekdays only.
+
+PART 2 QUESTIONS:
+e) It will not work so we have to fix it. Fix it implemented in the lab2_queries1.sql file.
+f) The names are coming from the customer table while the scheduled deliveries are coming from the schedule table.
+i) It will not work so we have to fix it. Fix it implemented in the lab2_queries1.sql file.
+
+All Results are shown in the lab2_session.lst File.
+
+

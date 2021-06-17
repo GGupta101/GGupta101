@@ -1,0 +1,11 @@
+Name: Gagan Gupta
+Date: 05/04/2020 
+Title: COEN 178 Lab5 Questions 5-6 and Observations
+
+Questions:
+5.1) What is the count shown for ‘advisor’ title?
+--- Current count for the advisor title is 49.
+5.2) Do you think the trigger fired? Why? 
+--- Yes the trigger fired because we can see the advisor count go from 48 to 49 in the new query.
+6.1) Did the trigger fire? Show reasons for your answer. 
+--- Yes the trigger fired because we can see the advisor count go from 49 to 48 in the new query.

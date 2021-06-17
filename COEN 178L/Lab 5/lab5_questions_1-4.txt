@@ -1,0 +1,11 @@
+Name: Gagan Gupta
+Date: 05/04/2020 
+Title: COEN 178 Lab5 Questions 1-4 and Observations
+
+Questions:
+2.1) What is the output?
+--- The ouput for Select calcSalaryRaise('Young',2) from Dual; was 13000
+2.2) What is the output?
+--- The output for the more useful query with Young as the name was CURRENTSALARY = 600000 and NEWSALARY = 613000 where NEWSALARY is CURRENTSALARY + calcSalaryRaise('Young',2)
+4.1) What is the count shown for the title, ‘advisor’?
+--- 106 as shown in the lab5_output1-4.txt file

@@ -1,0 +1,25 @@
+Name: Gagan Gupta
+Date: 04/06/2020 
+Title: COEN 178 Lab1 Observations
+
+
+PART 1 QUESTIONS:
+Do you see the message, Table created, at SQL prompt?
+---Yes, the table was created.
+Do you see all the tuples you have entered in the table?
+---Yes, I see the one tuple of (1, 'A test')
+Did you succeed in adding a duplicate tuple?
+---Yes, I have two tuples with the data of (1, 'A test')
+Did you succeed in adding a duplicate row?
+---No, Primary Key means that there can only be one str per tnum therefore we get the "unique constraint" error when we try to insert the second time
+Do you see the tables (trial and test) that you have created so far?
+---Yes, I can see TRIAL and TEST
+What do you see?
+---After dropping the TRIAL table I only see the TEST table when I SELECT TABLE_NAME FROM USER_TABLES;
+
+PART 2 QUESTIONS:
+---Was able to use a sql script to insert into the table
+
+PART 3 QUESTIONS:
+How many rows are retrieved from the table?
+---Staff_2010 has 453 rows

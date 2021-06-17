@@ -1,0 +1,36 @@
+Name: Gagan Gupta
+Date: 05/18/2020 
+Title: COEN 178 Lab7 Questions
+
+Questions:
+1.1) Do a Select * on the views you have created in a and b. Do they work?
+---Both the views work.
+1.2) What was inserted for budget, startdate and enddate? 
+---All three values were inputed as NULL.
+1.3) Insert the following data. Did it succeed? If not, give reasons.
+---This did not succeed as we can add to current projects but we can't add to past projects.
+1.4) Try to insert the following data. Did it succeed? If not, why not?
+---This did not succeed as we "cannot modify more than one base table through a join view".
+4.1) Did you succeed? What did you see?
+---The trigger was made however the insert did not work because itemorder would be mutating which 
+may cause the trigger to miss it. I saw the mutating error in the console.
+5.1) Why do you think the prerequisites are in a separate table and not included in the Course table? 
+---One course can have multiple prereq's but not vice versa. If the prereq's were in the table the 
+relationship would have to be defined pointing to itself which isn't great
+5.2) Did you successfully add the above row into the table?
+---No the row above could not be added to the limittest trigger throwing the error of 
+only 2 prereqs pre course.
+5.3) Using Select, check the data in Course_PreReq table. How many rows are there?
+---2 rows.
+5.4) Using Select, check the data in Course_PreReq table. How many rows are there?
+---After the valid insert there are 3 rows.
+5.5) What is the result of update above? Did it work? Did you see any mutating table error?
+---The update did not work because course_prereq would be mutating which 
+may cause the trigger to miss it. I saw the mutating error in the console.
+6.1) Do a select and display the data in Course_Prereq. Is the constraint, a course cannot have more 
+than 2 prerequsites, enforced?
+---Yes the constraint is enforced.
+6.2) Do an update as shown. What is the result? 
+---The update is stopped as the constraint, a course cannot have more than 2 prerequsites, is enforced.
+6.3) Is the constraint, a course cannot have more than 2 prerequsites, enforced?
+---Yes the constraint is enforced.

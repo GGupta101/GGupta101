@@ -1,0 +1,348 @@
+SQL> start /home/ggupta/Documents/COEN178L/Labs/Lab2/lab2.sql
+Creating and Populating customer, deliveryservice, and schedule
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table altered.
+
+Inserting Base Tuples With Some Additional Tuples
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO schedule VALUES ('dg5','c32','t')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (GGUPTA.SYS_C00827807) violated - parent key 
+not found 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+CUSTI FIRSTNAME  LASTNAME   CITY                                                
+----- ---------- ---------- ----------                                          
+c1    John       Smith      SJ                                                  
+c2    Mary       Jones      SFO                                                 
+a1    Vincent    Chen       SJ                                                  
+a12   Greg       King       SJ                                                  
+c7    James      Bond       LA                                                  
+x10   Susan      Blogg      SFO                                                 
+g11   Gagan      Gupta      LIV                                                 
+n13   Naveen     Gupta      LIV                                                 
+
+8 rows selected.
+
+
+SERVICEID  ITEM            LOCATION        SERVICEFEE                           
+---------- --------------- --------------- ----------                           
+dsg1       grocery         SJ                      25                           
+dsb1       books           SJ                      10                           
+dsm2       movies          LA                      10                           
+dby3       babygoods       SFO                     15                           
+dsg2       grocery         SFO                     20                           
+dg5        greengoods      SFO                     30                           
+dsg3       grocery         LIV                     40                           
+dsm3       grocery         LIV                     15                           
+
+8 rows selected.
+
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dby3       x10   f                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+dsg3       g11   m                                                              
+dsm2       c7    r                                                              
+
+7 rows selected.
+
+Adding ('dsg','c2','s') Values into schedule
+INSERT INTO schedule VALUES ('dsg','c2','s')
+*
+ERROR at line 1:
+ORA-02290: check constraint (GGUPTA.SYS_C00827805) violated 
+
+
+Adding Additional Tuples
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> SELECT custid,firstname||' '||lastname AS Fullname,city FROM customer;
+
+CUSTI FULLNAME              CITY                                                
+----- --------------------- ----------                                          
+c1    John Smith            SJ                                                  
+c2    Mary Jones            SFO                                                 
+a1    Vincent Chen          SJ                                                  
+a12   Greg King             SJ                                                  
+c7    James Bond            LA                                                  
+x10   Susan Blogg           SFO                                                 
+g11   Gagan Gupta           LIV                                                 
+n13   Naveen Gupta          LIV                                                 
+s15   Shakha Gupta          LIV                                                 
+
+9 rows selected.
+
+SQL> SELECT * FROM customer ORDER BY lastname;
+
+CUSTI FIRSTNAME  LASTNAME   CITY                                                
+----- ---------- ---------- ----------                                          
+x10   Susan      Blogg      SFO                                                 
+c7    James      Bond       LA                                                  
+a1    Vincent    Chen       SJ                                                  
+s15   Shakha     Gupta      LIV                                                 
+g11   Gagan      Gupta      LIV                                                 
+n13   Naveen     Gupta      LIV                                                 
+c2    Mary       Jones      SFO                                                 
+a12   Greg       King       SJ                                                  
+c1    John       Smith      SJ                                                  
+
+9 rows selected.
+
+SQL> SELECT * FROM schedule ORDER BY serviceid ASC, custid DESC;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dby3       x10   f                                                              
+dc1        n13   w                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dsg3       g11   m                                                              
+dsm2       c7    r                                                              
+
+8 rows selected.
+
+SQL> SELECT serviceid FROM deliveryservice MINUS SELECT serviceid FROM schedule;
+
+SERVICEID                                                                       
+----------                                                                      
+dsb1                                                                            
+dsg2                                                                            
+dsm3                                                                            
+
+SQL> SELECT firstname||' '||lastname AS name FROM customer WHERE custid IN (SELECT custid FROM schedule WHERE day='m');
+
+NAME                                                                            
+---------------------                                                           
+John Smith                                                                      
+Gagan Gupta                                                                     
+
+SQL> SELECT lastname FROM customer WHERE custid IN (SELECT custid FROM schedule);
+
+LASTNAME                                                                        
+----------                                                                      
+Smith                                                                           
+King                                                                            
+Blogg                                                                           
+Gupta                                                                           
+Bond                                                                            
+Gupta                                                                           
+
+6 rows selected.
+
+SQL> SELECT MAX(servicefee) AS Highest_ServiceFee FROM deliveryservice;
+
+HIGHEST_SERVICEFEE                                                              
+------------------                                                              
+                40                                                              
+
+SQL> SELECT day,COUNT(day) FROM schedule GROUP BY day;
+
+DA COUNT(DAY)                                                                   
+-- ----------                                                                   
+r           2                                                                   
+t           1                                                                   
+w           2                                                                   
+m           2                                                                   
+f           1                                                                   
+
+SQL> SELECT A.custid,B.custid,A.city FROM customer A, customer B WHERE A.city=B.city AND A.custid<>B.custid;
+
+CUSTI CUSTI CITY                                                                
+----- ----- ----------                                                          
+a12   c1    SJ                                                                  
+a1    c1    SJ                                                                  
+x10   c2    SFO                                                                 
+a12   a1    SJ                                                                  
+c1    a1    SJ                                                                  
+a1    a12   SJ                                                                  
+c1    a12   SJ                                                                  
+c2    x10   SFO                                                                 
+s15   g11   LIV                                                                 
+n13   g11   LIV                                                                 
+s15   n13   LIV                                                                 
+
+CUSTI CUSTI CITY                                                                
+----- ----- ----------                                                          
+g11   n13   LIV                                                                 
+n13   s15   LIV                                                                 
+g11   s15   LIV                                                                 
+
+14 rows selected.
+
+SQL> SELECT C.firstname||' '||C.lastname AS name FROM schedule A, deliveryservice B, customer C WHERE B.location=C.city AND A.serviceid=B.serviceid AND A.custid=C.custid;
+
+NAME                                                                            
+---------------------                                                           
+John Smith                                                                      
+Greg King                                                                       
+James Bond                                                                      
+Susan Blogg                                                                     
+Gagan Gupta                                                                     
+
+SQL> SELECT MAX(salary) AS Highest_Salary,MIN(salary) AS Lowest_Salary FROM staff_2010;
+
+HIGHEST_SALARY LOWEST_SALARY                                                    
+-------------- -------------                                                    
+        179700             0                                                    
+
+SQL> SET ECHO OFF
+Creating and Populating L_EMP and L_DEPT
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> SELECT empname FROM L_EMP,L_DEPT WHERE L_EMP.deptid=L_DEPT.deptid AND L_DEPT.deptname='Testing';
+
+EMPNAME                                                                         
+----------                                                                      
+moor                                                                            
+winger                                                                          
+
+SQL> SET ECHO OFF
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> spool off;

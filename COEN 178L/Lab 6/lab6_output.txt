@@ -1,0 +1,184 @@
+SQL> start /home/ggupta/Documents/COEN178L/Labs/Lab6/lab6.sql
+Creating BankCust_6, Accounts_6, and Totals_6 Tables
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+==========QUESTION 1==========
+
+Trigger created.
+
+No errors.
+From Trigger Customer NO: c1 Customer Name: Smith Customer City: SJ             
+
+1 row created.
+
+From Trigger Customer NO: c2 Customer Name: Jones Customer City: SJ             
+
+1 row created.
+
+From Trigger Customer NO: c3 Customer Name: Peters Customer City: SFO           
+
+1 row created.
+
+From Trigger Customer NO: c20 Customer Name: Chen Customer City: LA             
+
+1 row created.
+
+From Trigger Customer NO: c33 Customer Name: Williams Customer City: SFO        
+
+1 row created.
+
+
+CUSTN CUSTNAME             STREET                         CITY                  
+----- -------------------- ------------------------------ --------------------  
+c1    Smith                32 Lincoln st                  SJ                    
+c2    Jones                44 Benton st                   SJ                    
+c3    Peters               12 palm st                     SFO                   
+c20   Chen                 20 san felipo                  LA                    
+c33   Williams              11 cherry Ave                 SFO                   
+
+==========QUESTION 2==========
+
+Trigger altered.
+
+
+Trigger created.
+
+No errors.
+
+0 rows deleted.
+
+
+0 rows deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         2000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+==========QUESTION 3==========
+
+1 row updated.
+
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+==========QUESTION 4==========
+
+Trigger created.
+
+No errors.
+
+6 rows deleted.
+
+
+4 rows deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         2000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+
+1 row updated.
+
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           6000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+==========QUESTION 5==========
+
+Trigger created.
+
+No errors.
+UPDATE BANKCUST_6 Set custno='c99' Where custno='c1'
+       *
+ERROR at line 1:
+ORA-20999: Cannot update a Primary Key 
+ORA-06512: at "GGUPTA.NOUPDATEPK_TRIG", line 3 
+ORA-04088: error during execution of trigger 'GGUPTA.NOUPDATEPK_TRIG' 
+
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> spool off;

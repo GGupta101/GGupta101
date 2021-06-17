@@ -1,0 +1,22 @@
+Name: Gagan Gupta
+Date: 04/20/2020 
+Title: COEN 178 Lab3 Observations
+
+
+PART 1 QUESTIONS:
+1) What is the output?
+---The output is all the people with the maximum salary in the staff_2010 table.
+2b) Did it work? Why or why not? What is the output?
+---It did not work because there are multiple people with the last name Young in the staff_2010 table. The Fixed output is all people who have the same salary as any person with last='young'.
+6) What is the option "i" for?
+---The 'i' indicates case-insensitive matching for the string.
+
+PART 2 QUESTIONS:
+8a) Does it give you the correct results?
+---Yes it does give us the correct results.
+9.1) Will Attempt 1 work?
+---No it will not.
+9.2) Will Attempt 2 work?
+---No it will not.
+9a) What is the problem with the above query?
+---THe query in attempt 2 has an issue with the HAVING condition where the subquery returns more than one row.

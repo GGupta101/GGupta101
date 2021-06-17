@@ -1,0 +1,13 @@
+Name: Gagan Gupta
+Date: 04/27/2020 
+Title: COEN 178 Lab4 Part 2 Observations
+
+Part 2 Questions:
+4.1) Did the procedure compile without errors?
+---Yes the procedure compiled.
+4.2) What is displayed?
+---PL/SQL procedure successfully completed
+5.1) What is displayed?
+---The number 45 was displayed.
+8.1) Did your function work correctly?
+---Yes the fuction was able to get the salary for a specific name.

@@ -1,0 +1,269 @@
+SQL> start /home/ggupta/Documents/COEN178L/Labs/Lab7/lab7.sql
+Creating EMP7, Project7, and EMP_Project Tables
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+==========QUESTION 1==========
+
+View created.
+
+
+View created.
+
+
+PROJE TITLE                MANAG                                                
+----- -------------------- -----                                                
+pj3   Professional         e4                                                   
+pj4   Professional         e5                                                   
+
+
+TITLE                MANAG                                                      
+-------------------- -----                                                      
+Research             e1                                                         
+Research             e2                                                         
+
+
+1 row created.
+
+
+PROJE TITLE                    BUDGET STARTDATE ENDDATE   MANAG                 
+----- -------------------- ---------- --------- --------- -----                 
+pj1   Research                1000000 10-JAN-19 20-FEB-20 e1                    
+pj2   Research                 100000 10-FEB-19 20-APR-19 e2                    
+pj3   Professional             150000 15-JAN-20 20-SEP-20 e4                    
+pj4   Professional             200000 18-SEP-20 06-JAN-21 e5                    
+p99   Testing                                             e2                    
+
+INSERT INTO PastProjects VALUES ('Testing','e2')
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("GGUPTA"."PROJECT7"."PROJECTID") 
+
+
+
+View created.
+
+
+PROJE PROJECT_TITLE        MANAGERNAME                                          
+----- -------------------- --------------------                                 
+pj1   Research             J.Smith                                              
+p99   Testing              M.Jones                                              
+pj2   Research             M.Jones                                              
+pj3   Professional         G.Gupta                                              
+pj4   Professional         N.Gupta                                              
+
+INSERT INTO ManagedProjects VALUES ('p88','Design','Mary Mason')
+*
+ERROR at line 1:
+ORA-01776: cannot modify more than one base table through a join view 
+
+
+==========QUESTION 4==========
+
+Trigger created.
+
+No errors.
+INSERT INTO ItemOrder VALUES ('o1',100)
+            *
+ERROR at line 1:
+ORA-04091: table GGUPTA.ITEMORDER is mutating, trigger/function may not see it 
+ORA-06512: at "GGUPTA.ITEMORDER_AFTER_INSERT_TRIG", line 4 
+ORA-04088: error during execution of trigger 
+'GGUPTA.ITEMORDER_AFTER_INSERT_TRIG' 
+
+
+==========QUESTION 5==========
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Trigger created.
+
+No errors.
+
+1 row created.
+
+
+1 row created.
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+
+INSERT INTO Course_Prereq VALUES (121,12)
+            *
+ERROR at line 1:
+ORA-20000: Only 2 prereqs for course 
+ORA-06512: at "GGUPTA.LIMITTEST", line 15 
+ORA-04088: error during execution of trigger 'GGUPTA.LIMITTEST' 
+
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+
+
+1 row created.
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       133         12                                                           
+
+UPDATE COURSE_PREREQ SET courseno = 121 WHERE courseno= 133
+       *
+ERROR at line 1:
+ORA-04091: table GGUPTA.COURSE_PREREQ is mutating, trigger/function may not see 
+it 
+ORA-06512: at "GGUPTA.LIMITTEST", line 6 
+ORA-04088: error during execution of trigger 'GGUPTA.LIMITTEST' 
+
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       133         12                                                           
+
+==========QUESTION 6==========
+
+3 rows deleted.
+
+
+Trigger created.
+
+No errors.
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO Course_Prereq values (121,12)
+            *
+ERROR at line 1:
+ORA-20000: Only 2 prereqs for course 
+ORA-06512: at "GGUPTA.LIMITTEST", line 14 
+ORA-04088: error during execution of trigger 'GGUPTA.LIMITTEST' 
+
+
+
+1 row created.
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       133         12                                                           
+
+UPDATE COURSE_PREREQ SET courseno = 121 WHERE courseno= 133
+       *
+ERROR at line 1:
+ORA-20000: Only 2 prereqs for course 
+ORA-06512: at "GGUPTA.LIMITTEST", line 14 
+ORA-04088: error during execution of trigger 'GGUPTA.LIMITTEST' 
+
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       133         12                                                           
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> spool off;
