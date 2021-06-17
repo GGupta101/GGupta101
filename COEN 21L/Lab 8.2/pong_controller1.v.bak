@@ -1,0 +1,59 @@
+module pong_controller1(Clock, Q, RS1, LS1, iRESET, iRSRV, PSTATE, S, LCT, RCT, LSI, RSI);
+	input Clock, iRESET, iRSRV, RS1, LS1;
+	input [3:0]Q;
+	output LCT, RCT, LSI, RSI;
+	output [9:1]PSTATE;
+	output [1:0]S;
+	parameter [9:1] 
+	sIDLE=9’b100000000, 
+	sRSRV=9’b000000001, 
+	sMOVL=9’b000000010, 
+	sENDL=9’b000000100;
+	reg [9:1] CSTATE, NSTATE ;
+	reg [3:0] Q1;
+	
+	always@(posedge Clock)
+		begin
+			case(S)
+					0: Q1 <= Q;
+					1: Q1 <= {RS1,Q[3:1]};
+					2: Q1 <= {Q[2:0],LS1};
+					3: Q1 <= {0,0,0,0};
+			endcase
+		end
+	
+	always@(*)
+	begin
+		if(PSTATE == sRSRV)LSI=1;
+		else LSI=0;
+	end
+	
+	always@(*)
+	begin
+		if(PSTATE == sENDL)RCT=1;
+		else RCT=0;
+	end
+	
+	assign LCT=0;
+	assign RSI=0;
+	
+	always@(*)
+	begin	
+		case(CSTATE)
+			sIDLE:begin if(iRSRV==1) NSTATE = sRSRV;
+					else NSTATE = sIDLE; end
+			
+			sRSRV:begin if(iRESET==1) NSTATE = sIDLE;
+					else NSTATE = sMOVL; end
+			 
+			sMOVL:begin if(iRESET==1) NSTATE =s IDLE;
+					else if(Q1[3]==1)NSTATE = sENDL;
+					else NSTATE = sMOVL; end
+			 
+			sENDL:NSTATE = sIDLE;
+			
+			default: NSTATE = sIDLE;
+		endcase
+	end
+	
+endmodule

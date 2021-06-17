@@ -1,0 +1,6 @@
+module var_clock(mclock50, SP, VCLK);
+	input mclock50;
+	input[2:0]SP;
+	output VCLK;
+	
+	

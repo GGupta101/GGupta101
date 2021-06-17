@@ -1,0 +1,7 @@
+module pong_game12( iRESET, iRSRVn. iRSRVn, iRSRVn, iRSRVn, SP, mclock50,  Q, LSCORE, RSCORE, LSI, RSI, PSTATE, VCLK);
+	input  iRESET, iRSRVn. iRSRVn, iRSRVn, iRSRVn, mclock50;
+	input [2:0]SP;
+	output LSI, RSI, VCLK;
+	output [11:0]Q;
+	output [3:0]LSCORE, RSCORE;
+	output [9:1]PSTATE;

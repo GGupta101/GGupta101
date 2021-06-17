@@ -1,0 +1,12 @@
+module myALU4(A,B,P,C0,R,C4,V,Z)
+	input [3:0] A,B,P;
+	input C0;
+	output reg [3:0] R;
+	output V,Z;
+	wire [3:0] O1,O2,nO1;
+	
+	assign Z=~R[3]&~R[2]&~R[1]&~R[0];
+	myMux2to1 mux1(1,P[2],{0,0,0,0},B,O1);
+	assign nO1={~O1[3],~O1[1],~O1[2],~O1[0]};
+	myMux2to1 mux2(1,P[1],nO1,O1,O2);
+	myadder4 add(A,O2,C0,R,C4,V);

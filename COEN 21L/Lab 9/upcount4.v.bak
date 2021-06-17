@@ -1,0 +1,11 @@
+module upcount4(CLK, iRESET, count);
+	input CLK, iRESET;
+	output [3:0]count;
+	
+	always@(posedge CLK)
+	begin
+		if(iRESET==1)count<=4'b0000;
+		else count<=count+1;
+	end
+endmodule
+	
