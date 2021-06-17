@@ -1,0 +1,9 @@
+#!/bin/sh
+
+rm -rf project6
+mkdir project6
+
+cp -a Makefile unique.c set.h ../../3/Solution/generic/table.c project6
+
+tar cvf project6.tar ./project6
+rm -rf project6

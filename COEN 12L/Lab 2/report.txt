@@ -1,0 +1,29 @@
+Gagan Gupta
+unique
+------
+                              unsorted  sorted
+GreenEggsAndHam.txt             0.013    0.009
+Macbeth.txt                     0.124    0.029
+Genesis.txt                     0.127    0.030
+HoundOfTheBaskervilles.txt      0.403    0.070
+TheWarOfTheWorlds.txt           0.540    0.085
+TreasureIsland.txt              0.490    0.076
+TheSecretGarden.txt             0.453    0.075
+TwentyThousandLeagues.txt       1.097    0.147
+TheCountOfMonteCristo.txt       6.396    0.545
+Bible.txt                       7.502    0.579
+
+
+parity
+------
+                              unsorted  sorted
+GreenEggsAndHam.txt             0.009    0.012
+Macbeth.txt                     0.588    0.083
+Genesis.txt                     0.622    0.093
+HoundOfTheBaskervilles.txt      2.902    0.318
+TheWarOfTheWorlds.txt           3.419    0.372
+TreasureIsland.txt              3.454    0.397
+TheSecretGarden.txt             2.995    0.385
+TwentyThousandLeagues.txt       8.626    0.777
+TheCountOfMonteCristo.txt       81.445   6.081
+Bible.txt                       94.869   6.018
