@@ -1,0 +1,19 @@
+# Name: Gagan Gupta 
+# Date: 01/16/20
+# Title: Lab2 - Programming in C and use of Systems Calls
+# Description: This is the answers to the questions asked in the lab instructions and other observations
+
+Step 1: Transfered the fork code into an editor
+
+Step 2: Compiled the code sucessfully
+
+Step 3: Ran the excecutible file and got a "Segmentation fault (core dumped)" error
+
+Step 4: Ran the program with the command line arguement of 3000 and it ran with that delay. When testing the 500 arguement, it ran way faster than the 3000 arguement. The 5000 arugement ran slower than the 3000 arguement.
+
+Step 5: Created a recurrsive function that takes in a level and an n (delay) and can create 7 threads with the forkRecurrsive(6,n); call
+
+Step 6: In the main we create 2 threads which each all the start routine and then merge/join back to the main thread. At the end it sasya main thread done
+
+Step 7: Simple fork program that only has one parent and one child where the child runs ls and the parent waits for the child to finish
+

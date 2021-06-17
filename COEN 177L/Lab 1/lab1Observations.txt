@@ -1,0 +1,18 @@
+Name: Gagan Gupta
+Date: 01/09/2020 
+Title: Lab1 Observations– Rectangle and Circle area
+Description: This program computes the area of a rectangle based on the height and the width of the rectangle and the area of a Circle based on the radius and value of pi
+We obtain the height, width, and the radius in real time input from the user
+
+Observations:
+	Home, User, Path, Pwd, and $$ are all used to get data about the User and the file location of the linux files and the .sh file
+
+	The User if statement checks if the user is ggupta and oututs accordingly. The who am I fuction gets the name of the user that is running the code right now.
+
+	areaRectangle() uses a while loop containing the fuctions to get the height and the width and we use a expr to multiple the two to get the area and then we output that. We also ask if the user wants to do the same operation again for another rectangle.
+
+	areaCirlce() uses a while loop containing the fuctions to get the radius from the user. Pi is alread defined in the start of the function and we use a expr with a bc to multiple the float(pi) and the int(radius squared) to get the area and then we output that. We also ask if the user wants to do the same operation again for another circle.
+
+	The Scale with the bc allows for us to use the float value f pi in the circle calculation.
+
+	We call each of these functions once in the end of the program.

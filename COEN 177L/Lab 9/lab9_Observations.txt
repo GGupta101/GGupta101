@@ -1,0 +1,697 @@
+//Name: Gagan Gupta 
+//Date: 03/05/20
+//Title: Lab 9 - File Performance Measurement 
+
+1. Your first program should read a file from beginning to end. It should accept the filename as a parameter. 
+Each read call you make will specify a buffer and a read request size. This program should use a buffer of 
+size 10000 bytes, which you will use for each read. How long does this program take to read through each test 
+file (you may use the “time” command at the shell command line to time the program).
+
+Observations: Time taken grew as file size as it takes a longer time to copy a larger file.
+
+step1 file1.txt
+
+real    0m0.010s
+user    0m0.000s
+sys     0m0.016s
+
+step1 file2.txt
+
+real    0m0.010s
+user    0m0.000s
+sys     0m0.000s
+
+step1 file3.txt
+
+real    0m0.033s
+user    0m0.000s
+sys     0m0.016s
+
+step1 file4.txt
+
+real    0m0.172s
+user    0m0.031s
+sys     0m0.125s
+
+step1 file5.txt
+
+real    0m17.136s
+user    0m2.922s
+sys     0m14.016s
+
+
+
+2. Your second program should accept a numerical parameter at the command line, and should repeat the behavior 
+of your first program, but should now use a buffer of size N (where N is the value accepted at the command line) 
+for each read request. This allows you to re-run the previous timing test but for differently sized I/O operations. 
+Time your second program for read sizes ranging between 100, 1000, 10000 and 10000 bytes.
+
+Observations: As the read size increases the read time increases as well. This is best demonstrated for file5.txt as 
+its size far exceeds the size of any of the read sizes.
+
+step2 file1.txt 100
+
+real    0m0.009s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file1.txt 1000
+
+real    0m0.008s
+user    0m0.000s
+sys     0m0.000s
+
+step2 file1.txt 10000
+
+real    0m0.008s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file1.txt 100000
+
+real    0m0.009s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file2.txt 100
+
+real    0m0.008s
+user    0m0.000s
+sys     0m0.000s
+
+step2 file2.txt 1000
+
+real    0m0.011s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file2.txt 10000
+
+real    0m0.008s
+user    0m0.000s
+sys     0m0.000s
+
+step2 file2.txt 100000
+
+real    0m0.007s
+user    0m0.000s
+sys     0m0.000s
+
+step2 file3.txt 100
+
+real    0m0.024s
+user    0m0.000s
+sys     0m0.031s
+
+step2 file3.txt 1000
+
+real    0m0.027s
+user    0m0.000s
+sys     0m0.031s
+
+step2 file3.txt 10000
+
+real    0m0.019s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file3.txt 100000
+
+real    0m0.014s
+user    0m0.000s
+sys     0m0.016s
+
+step2 file4.txt 100
+
+real    0m0.170s
+user    0m0.047s
+sys     0m0.125s
+
+step2 file4.txt 1000
+
+real    0m0.154s
+user    0m0.031s
+sys     0m0.109s
+
+step2 file4.txt 10000
+
+real    0m0.135s
+user    0m0.000s
+sys     0m0.125s
+
+step2 file4.txt 100000
+
+real    0m0.043s
+user    0m0.000s
+sys     0m0.047s
+
+step2 file5.txt 100
+
+real    0m16.240s
+user    0m2.516s
+sys     0m13.656s
+
+step2 file5.txt 1000
+
+real    0m15.311s
+user    0m1.438s
+sys     0m13.844s
+
+step2 file5.txt 10000
+
+real    0m12.781s
+user    0m0.844s
+sys     0m11.922s
+
+step2 file5.txt 100000
+
+real    0m3.729s
+user    0m0.125s
+sys     0m3.594s
+
+
+
+3. Your third program should extend your second program by adding one more step. For each read operation, 
+there should now be a corresponding write operation where the data just read is written out to a newly 
+created file. In other words, you should now be timing a program that copies each file that it is run 
+against. You are now testing the speed of sequential reads+writes for files of varying size, and using 
+I/O operations of varying size.
+
+Observations: Same as step two due to only the minor addition of copy/write which also take a longer time 
+with larger files.
+
+step3 file1.txt 100
+
+real    0m0.013s
+user    0m0.000s
+sys     0m0.016s
+
+step3 file1.txt 1000
+
+real    0m0.007s
+user    0m0.000s
+sys     0m0.000s
+
+step3 file1.txt 10000
+
+real    0m0.011s
+user    0m0.000s
+sys     0m0.000s
+
+step3 file1.txt 100000
+
+real    0m0.007s
+user    0m0.000s
+sys     0m0.000s
+
+step3 file2.txt 100
+
+real    0m0.013s
+user    0m0.000s
+sys     0m0.016s
+
+step3 file2.txt 1000
+
+real    0m0.012s
+user    0m0.000s
+sys     0m0.016s
+
+step3 file2.txt 10000
+
+real    0m0.011s
+user    0m0.000s
+sys     0m0.000s
+
+step3 file2.txt 100000
+
+real    0m0.012s
+user    0m0.000s
+sys     0m0.016s
+
+step3 file3.txt 100
+
+real    0m0.051s
+user    0m0.000s
+sys     0m0.063s
+
+step3 file3.txt 1000
+
+real    0m0.048s
+user    0m0.000s
+sys     0m0.047s
+
+step3 file3.txt 10000
+
+real    0m0.034s
+user    0m0.000s
+sys     0m0.031s
+
+step3 file3.txt 100000
+
+real    0m0.017s
+user    0m0.000s
+sys     0m0.016s
+
+step3 file4.txt 100
+
+real    0m0.439s
+user    0m0.094s
+sys     0m0.344s
+
+step3 file4.txt 1000
+
+real    0m0.400s
+user    0m0.063s
+sys     0m0.344s
+
+step3 file4.txt 10000
+
+real    0m0.351s
+user    0m0.016s
+sys     0m0.344s
+
+step3 file4.txt 100000
+
+real    0m0.111s
+user    0m0.000s
+sys     0m0.109s
+
+step3 file5.txt 100
+
+real    0m49.480s
+user    0m7.531s
+sys     0m41.750s
+
+step3 file5.txt 1000
+
+real    0m41.760s
+user    0m3.484s
+sys     0m38.063s
+
+step3 file5.txt 10000
+
+real    0m32.603s
+user    0m2.156s
+sys     0m30.281s
+
+step3 file5.txt 100000
+
+real    0m12.308s
+user    0m0.234s
+sys     0m9.859s
+
+
+
+4. Your fourth and final program will create multiple copies of each file. You will create 
+a number of threads, each of which will read and copy a file (as was done in program 3), but 
+now each thread copies the file to a new file named based on the thread number. Run your 
+timing experiments for all files, using all read/write sizes you used in parts 2 and 3, and 
+for the following number of threads: 2, 8, 32, and 64.
+
+Observations: Same test results as 3 except the fact that the larger the thread count, the 
+longer the file transfer takes. Also due to the size of file5.txt it is unable to run with 
+even 2 threads.
+
+step4 file1.txt 100 2
+
+real    0m0.022s
+user    0m0.000s
+sys     0m0.031s
+
+step4 file1.txt 100 8
+
+real    0m0.020s
+user    0m0.109s
+sys     0m0.016s
+
+step4 file1.txt 100 32
+
+real    0m0.048s
+user    0m0.313s
+sys     0m0.031s
+
+step4 file1.txt 100 64
+
+real    0m0.084s
+user    0m0.547s
+sys     0m0.188s
+
+step4 file1.txt 1000 2
+
+real    0m0.014s
+user    0m0.000s
+sys     0m0.016s
+
+step4 file1.txt 1000 8
+
+real    0m0.015s
+user    0m0.000s
+sys     0m0.016s
+
+step4 file1.txt 1000 32
+
+real    0m0.047s
+user    0m0.281s
+sys     0m0.031s
+
+step4 file1.txt 1000 64
+
+real    0m0.072s
+user    0m0.469s
+sys     0m0.047s
+
+step4 file1.txt 10000 2
+
+real    0m0.013s
+user    0m0.016s
+sys     0m0.016s
+
+step4 file1.txt 10000 8
+
+real    0m0.015s
+user    0m0.125s
+sys     0m0.000s
+
+step4 file1.txt 10000 32
+
+real    0m0.039s
+user    0m0.188s
+sys     0m0.047s
+
+step4 file1.txt 10000 64
+
+real    0m0.069s
+user    0m0.391s
+sys     0m0.141s
+
+step4 file1.txt 100000 2
+
+real    0m0.013s
+user    0m0.000s
+sys     0m0.000s
+
+step4 file1.txt 100000 8
+
+real    0m0.016s
+user    0m0.078s
+sys     0m0.016s
+
+step4 file1.txt 100000 32
+
+real    0m0.039s
+user    0m0.125s
+sys     0m0.078s
+
+step4 file1.txt 100000 64
+
+real    0m0.070s
+user    0m0.313s
+sys     0m0.219s
+
+step4 file2.txt 100 2
+
+real    0m0.070s
+user    0m0.109s
+sys     0m0.031s
+
+step4 file2.txt 100 8
+
+real    0m0.085s
+user    0m0.516s
+sys     0m0.063s
+
+step4 file2.txt 100 32
+
+real    0m0.263s
+user    0m2.172s
+sys     0m0.188s
+
+step4 file2.txt 100 64
+
+real    0m0.516s
+user    0m4.031s
+sys     0m0.688s
+
+step4 file2.txt 1000 2
+
+real    0m0.055s
+user    0m0.063s
+sys     0m0.031s
+
+step4 file2.txt 1000 8
+
+real    0m0.076s
+user    0m0.500s
+sys     0m0.000s
+
+step4 file2.txt 1000 32
+
+real    0m0.227s
+user    0m2.109s
+sys     0m0.078s
+
+step4 file2.txt 1000 64
+
+real    0m0.432s
+user    0m3.953s
+sys     0m0.531s
+
+step4 file2.txt 10000 2
+
+real    0m0.057s
+user    0m0.109s
+sys     0m0.000s
+
+step4 file2.txt 10000 8
+
+real    0m0.072s
+user    0m0.484s
+sys     0m0.016s
+
+step4 file2.txt 10000 32
+
+real    0m0.242s
+user    0m2.000s
+sys     0m0.250s
+
+step4 file2.txt 10000 64
+
+real    0m0.430s
+user    0m3.766s
+sys     0m0.625s
+
+step4 file2.txt 100000 2
+
+real    0m0.057s
+user    0m0.016s
+sys     0m0.094s
+
+step4 file2.txt 100000 8
+
+real    0m0.080s
+user    0m0.453s
+sys     0m0.047s
+
+step4 file2.txt 100000 32
+
+real    0m0.265s
+user    0m2.016s
+sys     0m0.250s
+
+step4 file2.txt 100000 64
+
+real    0m0.472s
+user    0m3.922s
+sys     0m0.422s
+
+step4 file3.txt 100 2
+
+real    0m0.531s
+user    0m0.922s
+sys     0m0.141s
+
+step4 file3.txt 100 8
+
+real    0m0.740s
+user    0m5.063s
+sys     0m0.500s
+
+step4 file3.txt 100 32
+
+real    0m2.365s
+user    0m21.906s
+sys     0m2.266s
+
+step4 file3.txt 100 64
+
+real    0m4.696s
+user    0m44.766s
+sys     0m3.875s
+
+step4 file3.txt 1000 2
+
+real    0m0.501s
+user    0m0.906s
+sys     0m0.078s
+
+step4 file3.txt 1000 8
+
+real    0m0.662s
+user    0m4.563s
+sys     0m0.563s
+
+step4 file3.txt 1000 32
+
+real    0m2.233s
+user    0m20.203s
+sys     0m1.969s
+
+step4 file3.txt 1000 64
+
+real    0m4.363s
+user    0m39.703s
+sys     0m4.719s
+
+step4 file3.txt 10000 2
+
+real    0m0.543s
+user    0m0.984s
+sys     0m0.109s
+
+step4 file3.txt 10000 8
+
+real    0m0.608s
+user    0m4.359s
+sys     0m0.359s
+
+step4 file3.txt 10000 32
+
+real    0m2.353s
+user    0m21.656s
+sys     0m2.125s
+
+step4 file3.txt 10000 64
+
+real    0m5.060s
+user    0m45.047s
+sys     0m4.188s
+
+step4 file3.txt 100000 2
+
+real    0m0.525s
+user    0m0.922s
+sys     0m0.109s
+
+step4 file3.txt 100000 8
+
+real    0m0.721s
+user    0m5.063s
+sys     0m0.422s
+
+step4 file3.txt 100000 32
+
+real    0m2.615s
+user    0m22.438s
+sys     0m2.063s
+
+step4 file3.txt 100000 64
+
+real    0m5.289s
+user    0m44.359s
+sys     0m4.828s
+
+step4 file4.txt 100 2
+
+real    0m5.134s
+user    0m9.234s
+sys     0m0.969s
+
+step4 file4.txt 100 8
+
+real    0m6.722s
+user    0m48.000s
+sys     0m4.672s
+
+step4 file4.txt 100 32
+
+real    0m26.281s
+user    4m7.313s
+sys     0m26.859s
+
+step4 file4.txt 100 64
+
+real    0m49.355s
+user    8m5.781s
+sys     0m47.875s
+
+step4 file4.txt 1000 2
+
+real    0m4.828s
+user    0m8.875s
+sys     0m0.719s
+
+step4 file4.txt 1000 8
+
+real    0m6.558s
+user    0m46.891s
+sys     0m4.750s
+
+step4 file4.txt 1000 32
+
+real    0m23.575s
+user    3m45.063s
+sys     0m22.734s
+
+step4 file4.txt 1000 64
+
+real    0m45.870s
+user    7m25.891s
+sys     0m47.016s
+
+step4 file4.txt 10000 2
+
+real    0m4.891s
+user    0m8.781s
+sys     0m0.938s
+
+step4 file4.txt 10000 8
+
+real    0m6.990s
+user    0m50.594s
+sys     0m4.531s
+
+step4 file4.txt 10000 32
+
+real    0m23.686s
+user    3m45.766s
+sys     0m22.031s
+
+step4 file4.txt 10000 64
+
+real    0m45.656s
+user    7m24.875s
+sys     0m46.156s
+
+step4 file4.txt 100000 2
+
+real    0m4.912s
+user    0m8.969s
+sys     0m0.828s
+
+step4 file4.txt 100000 8
+
+real    0m7.112s
+user    0m50.703s
+sys     0m4.969s
+
+step4 file4.txt 100000 32
+
+real    0m23.822s
+user    3m43.688s
+sys     0m22.609s
+
+step4 file4.txt 100000 64
+
+real    0m46.199s
+user    7m27.172s
+sys     0m45.844s

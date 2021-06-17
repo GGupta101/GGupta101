@@ -1,0 +1,23 @@
+//Name: Gagan Gupta 
+//Date: 02/13/20
+//Title: Lab6 - Minix operating system
+
+Setting up Minix OS:
+1. Open Linux Terminal and type "setup vmware" followed by "minix-get-image" followed by "vmware &" to setup the Minix Environment (Note: This will erase any previous images of Minix)
+2. In your Minix Environment use default username root and set a secure password (So when you use ftp it prompts you for it)
+3. In your Minix OS type "tcpd ftp /usr/bin/in.ftpd &" to setup the ftp command for the Linux Terminal
+4. Use "ifconfig" in Minix to get your IP to use ftp on and then ftp with that IP in Unix terminal to gain remote access to the Minix Environment
+5. In Minix cd all the way back to the root and cd /usr/src to get to the necessary file
+6. Type "make world" and run to test compliation of the files
+
+Changing the Copyright in the Minix OS Bootup:
+1. In your terminal (before ftp), set the directory to the locaiton you want the file to copy to
+2. Then use ftp to enter the Minix Environment and directed yourself to the /urc/src/kernel file location
+3. When here use the get functioin to copy over the main.c file ("get main.c main.c")
+4. This will copy the main.c file from the minix environment to your Linux machine
+5. Open this file and scroll down to the Copyright print statement and change it to a different phrase and save the file
+6. Go back to the Minix OS in the VM and use the rm function on main.c to remove it ("rm main.c")
+7. Go back to the Linux Minix environment and use the put function to copy the Linux main.c to the kernel folder in the Minix ("put main.c main.c")
+8. Go into the Minix OS in the VM and "ls" to check if the main.c file transfered properly
+9. "cd .." and run "make world" to compile the new main.c
+10. After the make world is done running, run reboot and you will see your change where the copyright line used to be

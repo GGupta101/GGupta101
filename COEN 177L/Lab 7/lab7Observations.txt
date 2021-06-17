@@ -1,0 +1,79 @@
+//Name: Gagan Gupta 
+//Date: 02/20/20
+//Title: Lab7 - Minix Scheduling 
+
+Setting up Minix OS:
+1. Open Linux Terminal and type "setup vmware" followed by "minix-get-image" followed by "vmware &" to setup the Minix Environment (Note: This will erase any previous images of Minix)
+2. In your Minix Environment use default username root and set a secure password (So when you use ftp it prompts you for it)
+3. In your Minix OS type "tcpd ftp /usr/bin/in.ftpd &" to setup the ftp command for the Linux Terminal
+4. Use "ifconfig" in Minix to get your IP to use ftp on and then ftp with that IP in Unix terminal to gain remote access to the Minix Environment
+5. In Minix cd all the way back to the root and cd /usr/src to get to the necessary file
+6. Type "make world" and run to test compliation of the files
+
+Changing the Scheduling in the Minix OS:
+1. In your terminal (before ftp), set the directory to the locaiton you want the file to copy to
+2. Then use ftp to enter the Minix Environment and directed yourself to the /urc/src/kernel file location
+3. When here use the get function to copy over the main.c file ("get proc.c proc.c")
+4. This will copy the proc.c file from the minix environment to your Linux machine
+5. Open this file and scroll down to the pick_proc Function and change it to the following:
+
+
+
+PRIVATE struct proc * pick_proc(void)
+{
+/* Decide who to run now.  A new process is selected an returned.
+ * When a billable process is selected, record it in 'bill_ptr', so that the 
+ * clock task can tell who to bill for system time.
+ */
+  register struct proc *rp;			/* process to run */
+  int q;				/* iterate over queues */
+  time_t t;
+  srand((unsigned) time(&t));
+
+  /* Check each of the scheduling queues for ready processes. The number of
+   * queues is defined in proc.h, and priorities are set in the task table.
+   * The lowest queue contains IDLE, which is always ready.
+   */
+  for (q=0; q < NR_SCHED_QUEUES; q++) { 
+        if(q>3) q=((rand()%(NR_SCHED_QUEUES-4))+4);
+ 	if(!(rp = rdy_head[q])) {
+		TRACE(VF_PICKPROC, printf("queue %d empty\n", q););
+		continue;
+	}
+
+        #if DEBUG_RACE
+	        rp = random_process(rdy_head[q]);
+        #endif
+
+	TRACE(VF_PICKPROC, printf("found %s / %d on queue %d\n", 
+		rp->p_name, rp->p_endpoint, q););
+	assert(proc_is_runnable(rp));
+	if (priv(rp)->s_flags & BILLABLE)	 	
+		bill_ptr = rp;		/* bill for system time */
+	return rp;
+  }
+  return NULL;
+}
+
+
+
+(MAKE SURE TO INCLUDE stdio.h, stdlib.h, AND clock.h TO MAKE SURE THE rand function works correctly)
+
+
+
+This change allows for the queues of 0, 1, 2, and 3 to run before the other threads get to run. 
+After that we randomize the scheduling to cause the rest of the processes to run randomly.
+We do this in the line in which there is the following: if(q>3) q=((rand()%(NR_SCHED_QUEUES-4))+4);
+This picks a random q from 4 to the last queue number inclusive.
+This code does not ensure that all queues will get to run however that is no the point of this exercise.
+
+
+
+6. Go back to the Minix OS in the VM and use the rm function on proc.c to remove it ("rm proc.c")
+7. Go back to the Linux Minix environment and use the put function to copy the Linux proc.c to the kernel folder in the Minix ("put proc.c proc.c")
+8. Go into the Minix OS in the VM and "ls" to check if the proc.c file transfered properly
+9. "cd .." and run "make world" to compile the new proc.c
+10. After the make world is done running, run reboot and you will see the boot time dramatically increase.
+    This is because we can only bootup when all the nessesary queues have run but randomly scheduling makes that process take much longer.
+    In the new test it can take up to 20 min compared to the previous priority scheduling taking 5 seconds to boot.1
+    The prority scheduling runs all the queues in order ensuring that all the queues run however our code does not do that causing the dramatic increase in boot time.

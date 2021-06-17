@@ -1,0 +1,31 @@
+//Name: Gagan Gupta 
+//Date: 01/23/20
+//Title: Lab3 - Pthreads and the inter-process Communication - Pipes
+
+Step 1: Complied and ran the pipe function implementation for the ls | more shell operation
+
+Step 2: Complied and ran the lab3_2.c file which was the implementation for a simple 2 
+		child upstream and downstream function
+
+Step 3: Modified lab3_2.c to implement the ls operation for the downstream operation of the pipe
+
+Step 4: Wrote, Complied, and Ran the pipe function implementation for the 
+		cat /etc/passwrd | grep root operation
+
+Step 5: Create a side of the pipe which is the producer which loads into the buffer for the 
+		consumer to read. The consumer reads from the buffer and prints out the producer buffer 
+		input and then responds with a fixed phrase.
+
+Step 6: Compiled and ran the simple thread creatation and join function. 10 threads were 
+		created and i values included 3, 6, 3, 8, 5, 3, 7, 4, 9, and 0 in that order. The reason
+		there are multiple values of i which are the same it because threads share the same
+
+Step 7: As we said in step 6, the threads are printing the same i multiple time because all the 
+		threads are using the same memory at the same time. To make sure they access the 
+		memory location of i at seperate times we have to implement a lock. This lock is of 
+		pthread_mutex_t type and we have to initalize it in the beginning of the main. We start
+		the lock in the for loop before the pthread_create and end the lock at the end (before 
+		the return) of the start routine. This is because the pthread_create calls the start 
+		routine therefore also calling the print statement that was accessing the i data location.
+		After the lock was implemented only one thread could read/write to i at a time therefore
+		solving the given problem.
