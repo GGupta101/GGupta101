@@ -1,0 +1,11 @@
+>>> S='Santa Clara University'
+>>> S[0:5]
+'Santa'
+>>> S[0:11]
+'Santa Clara'
+>>> S[-1]
+'y'
+>>> S[-2]
+'t'
+>>> S[12:]
+'University'
